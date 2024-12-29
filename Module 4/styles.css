@@ -25,6 +25,8 @@ nav a {
  }
 nav a:hover {
     color: #ccc;
+    border-bottom: #ccc 1px solid;
+    font-weight: bold;
 }
 main {
     padding: 20px;

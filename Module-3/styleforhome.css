@@ -1,25 +1,26 @@
-.grey {
-    border: 10px solid grey;
+.chapter-section{
+    border: 2px solid #d0d0d0;
     padding: 20px;
     margin: 80px auto;
-    border-radius: 20px;
+    border-radius: 5px;
     max-width: 800px;
     box-shadow: 0px 0px 10px 5px #0e0e0f;   
     line-height: 1.6;
-    background-color: #958b8b;
+    background-color: #4b4747;
 }
 body {
     
-    background-color: #676060;
+    background-color:#1a1a2e;
 }
-h1 {
+.chapter-section  h1 {
     font-size: 2em;
    color: #e9dddded;
-   border-bottom: 3px solid #e9dddded;
+   border-bottom: 2px solid #e9dddded;
 }
-h2 {
+.chapter-section h2 {
     font-size: 1em;
     color: #e9dddded;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     
 }
 nav {
@@ -29,7 +30,7 @@ nav {
     width: 100%;
     padding : 10px 0px;
     z-index: 1000;
-    background-color: rgba(48, 46, 46, 0.95);
+    background-color: #4b4747;
     box-shadow: 0px 2px 5px rgba(0 , 0 , 0 , 0.5);  
 
 }
@@ -56,4 +57,96 @@ nav li{
 nav a:hover{
     color: #776daf;
     border-bottom: 2px solid #f7f2f2;
+}
+/* Container Styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 130vh;
+   width: 100vw;
+   text-align: center;
+   padding: 2rem;
+   /* padding: 80; */
+   background-image: url(images/tobias-tullius-XZOO6QHub60-unsplash.jpg);
+   background-size: cover;
+   background-position: center center;
+   background-repeat:  no-repeat;
+   position: relative;
+  }
+
+.container::before{
+    content: " ";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 0;
+}
+
+.header-contenet, .button-container {
+    z-index: 1;
+}   
+.container h1 {
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 4px #000000;
+}
+.container p {
+    font-size: 1.4em;
+    color: #e2d9d9;;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 4px #000000;
+}
+/* Header Section- Button Style */
+button {
+    text-transform: capitalize;
+    position: relative;
+    border: 3px solid transparent;
+    font-size: 18px;
+    background-color: transparent;
+    border-radius: 3px;
+    margin: 0 10px;
+    padding: 23px 33px;
+    overflow :visible;
+    cursor: pointer;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+button:active {
+    transform: translate(3px);
+}
+
+/* Fixing the ::before pseudo-element */
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #ffffff;
+    z-index: -1; /* Ensure it's behind the button text */
+    opacity: 0;  /* Start hidden */
+    transform: scale(0);  /* Start with the scaled down state */
+    transition: transform 0.3s, opacity 0.3s; /* Animation properties */
+}
+
+/* Button hover effect */
+.shrink-border {
+    background-color: transparent;
+    color: whitesmoke;
+}
+
+.shrink-border:hover {
+    color: #f4f4f4;
+    box-shadow: #000000;
+}
+
+.shrink-border:hover::before {
+    opacity: 1;  /* Make the border visible */
+    transform: scale(1);  /* Animate the border to its original size */
 }

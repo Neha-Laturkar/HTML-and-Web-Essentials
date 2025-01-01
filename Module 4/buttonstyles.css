@@ -1,0 +1,63 @@
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+body {
+    background-image: url(images/pietro-de-grandi-6U4wogjLArk-unsplash.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+button {
+    background-color: #f7f2f2;
+    color: rgb(249, 249, 249);
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 20px 40px;
+    border : 4px solid white;
+    box-shadow: 3px 5px 10px black;
+    background: transparent;
+    text-shadow: #352057 2px 2px 4px;
+   font-weight: bolder;
+   position: relative;
+   /* transition: transform 0.5s ease; */
+}
+
+button:hover {
+    background-color: rgb(27, 32, 44);
+    color: #352057;
+    border: 5px solid #f7f2f2;
+    box-shadow: 3px 5px 10px black;
+    text-transform: uppercase;
+    text-shadow: #352057 2px 2px 4px;
+    transform: scale(1.2);
+}
+button:active {
+    transform: translate(5px);
+}
+button::before {
+    content: "";
+    margin-right: 10px;
+    z-index: 1;
+   transform: scale(0);
+   transition: transform 0.5s, opacity 0.5s;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: scale(0) translate(-50%, -50%);
+   
+}
+.shrink-border {
+    background-color: transparent;
+    color: white;
+
+}
+.shrink-border:hover {
+    color: white;
+    box-shadow: black 3px 5px 10px;
+}
+.shrink-border:hover::before{
+    opacity: 1;
+    transform: scale(1);
+}

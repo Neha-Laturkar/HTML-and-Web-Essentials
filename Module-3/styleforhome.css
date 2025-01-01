@@ -16,6 +16,8 @@ body {
     font-size: 2em;
    color: #e9dddded;
    border-bottom: 2px solid #e9dddded;
+   display: inline;
+   padding-bottom: 5px;
 }
 .chapter-section h2 {
     font-size: 1em;
@@ -120,7 +122,7 @@ button:active {
     transform: translate(3px);
 }
 
-/* Fixing the ::before pseudo-element */
+/* the ::before pseudo-element */
 button::before {
     content: "";
     position: absolute;
@@ -144,9 +146,53 @@ button::before {
 .shrink-border:hover {
     color: #f4f4f4;
     box-shadow: #000000;
+    
 }
 
 .shrink-border:hover::before {
     opacity: 1;  /* Make the border visible */
     transform: scale(1);  /* Animate the border to its original size */
+}
+
+/* This the footer section styles */
+footer{
+    background-color: #2a2727;
+    padding: 40px 0;
+    color: #ffffff;
+}
+
+.footer-content {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    gap: 20px;
+}
+.footer-links a {
+    color: #e6e6e6;
+    text-decoration: none;
+    transform: color 0.5s;
+}
+
+.footer-links a:hover {
+    color: #483e6a;
+}
+
+.footer-social {
+    margin-top: 0;
+}
+.footer-social a {
+    color: #e6e6e6;
+    font-size: 28px;
+    margin: 10px;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.footer-social a:hover {
+    color: #483e6a;
 }

@@ -1,0 +1,52 @@
+
+.maindiv{
+    background-color: rgb(228, 231, 231);
+    border: 4px solid black;
+    padding: 20px;
+    margin: 10px;
+    
+}
+.maindiv h1 p{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.div1{
+    background-color: rgb(251, 249, 165);
+    border: 3px solid black;
+   
+    margin: 10px;
+}
+.div1 h1{
+    text-align: right;
+    color: rgb(12, 12, 103);
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.div2 {
+    background-color: sandybrown;
+    border: 3px solid black;
+   
+    margin: 10px;
+}
+.div2 h1 {
+    text-align: left;
+    color: rgb(12, 12, 103);
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.footer-content {
+    background-color: #dc80dc;
+    border: 3px solid black;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

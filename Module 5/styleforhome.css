@@ -367,3 +367,67 @@ figcaption {
 .th-text {
     color: #9898de;
 }
+
+/* This is about us style */
+.two-column-container {
+display: flex;
+justify-content: space-between;
+margin: 100px 70px 50px 70px;
+
+}
+.column {
+flex-basis: 48%;
+}
+.column img {
+    width: 100%;
+    box-shadow:  0px 0px 10px  #0e0e0f;
+    border: #000000 3px solid;
+    margin-top: 50px;
+   
+}
+.about-section {
+    background-color: #5d5d72;
+    padding: 35px;
+    margin:  auto;
+    max-width: 800px;
+    box-shadow: 0px 4px 15px  #0e0e0f;
+}
+.about-section h2 {
+    font-size: 1.3em;
+    color: #ffffffed;
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 10px;
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #d0cccced;
+}
+
+.about-section p {
+    font-size: 1em;
+    color: #ffffffed;
+    font-family: Montserrat, sans-serif;
+    line-height: 1.4;
+    
+}
+
+    /* Call to action style */
+.action-class {
+   
+    text-align: center;
+    padding: 50px 20px;
+   background-color: rgba(69, 67, 81, 0.632);
+    z-index: -1;
+    margin-top: 50px;
+    box-shadow: 0px 4px 15px  #0e0e0f;
+    border-radius: 8px;
+    margin-bottom: 40vh;
+
+}
+.action-class h2 {
+    font-size: 1.5em;
+    color: #e2d6d6ed;
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 20px;
+}
+
+

@@ -29,6 +29,17 @@ body {
     font-size: 1em; /* Smaller font size for h2 */
     color: #e9dddded; /* Light grey color for the text */
     font-family: Montserrat, sans-serif; /* Specifies the font */
+    text-decoration: underline #e9dddded ; /* Underline effect */
+    margin-top: 20px; /* Adds space at the top of the h2 */
+    text-underline-offset: 5px; /* Adjusts the position of the underline */
+    
+}
+
+.chapter-section p {
+    font-size: 1em; /* Font size for paragraphs */
+    color: #e2d9d9; /* Light grey color for the text */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Specifies the font */
+    
 }
 
 /* Navigation bar styles */
@@ -338,4 +349,21 @@ figcaption {
     background-color: #b4abe5;
     color: rgb(57, 44, 154);
     transform: scale(1.1);
+}
+
+/* Table styles */
+.main-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.main-table td, th {
+    padding: 10px;
+    border: 1px solid #ebe8e8;
+}
+
+.light-text {
+    color: #d4d4d4;
+}
+.th-text {
+    color: #9898de;
 }

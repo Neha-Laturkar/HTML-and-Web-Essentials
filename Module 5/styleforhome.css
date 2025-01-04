@@ -1,0 +1,252 @@
+.chapter-section{
+    border: 2px solid #d0d0d0;
+    padding: 20px;
+    margin: 80px auto;
+    border-radius: 5px;
+    max-width: 800px;
+    box-shadow: 0px 0px 10px 5px #0e0e0f;   
+    line-height: 1.6;
+    background-color: #4b4747;
+}
+body {
+    
+    background-color:#393636;
+}
+.chapter-section  h1 {
+    font-size: 2em;
+   color: #e9dddded;
+   border-bottom: 2px solid #e9dddded;
+   display: inline;
+   padding-bottom: 5px;
+}
+.chapter-section h2 {
+    font-size: 1em;
+    color: #e9dddded;
+    font-family: Montserrat, sans-serif;
+    
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding : 10px 0px;
+    z-index: 1000;
+    background-color: #4b4747;
+    box-shadow: 0px 2px 5px rgba(0 , 0 , 0 , 0.5);  
+
+}
+ nav ul {
+    font-size: 16px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    display: flex;
+}
+ nav a{
+    text-decoration: none;
+    /* padding: 10px; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #f7f2f2;
+    transform: color 0.5s , border-bottom 0.5s;
+    padding-bottom: 5px;
+    position: relative;
+}
+nav li{
+    margin: 0 10px;
+}
+nav a:hover{
+    color: #776daf;
+    border-bottom: 2px solid #f7f2f2;
+}
+/* Container Styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+   width: 100vw;
+   text-align: center;
+   padding: 2rem;
+   /* padding: 80; */
+   background-image: url(images/tobias-tullius-XZOO6QHub60-unsplash.jpg);
+   background-size: cover;
+   background-position: center center;
+   background-repeat:  no-repeat;
+   position: relative;
+  }
+
+.container::before{
+    content: " ";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 0;
+}
+
+.header-contenet, .button-container {
+    z-index: 1;
+}   
+.container h1 {
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 4px #000000;
+}
+.container p {
+    font-size: 1.4em;
+    color: #e2d9d9;;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 4px #000000;
+}
+/* Header Section- Button Style */
+button {
+    text-transform: capitalize;
+    position: relative;
+    border: 3px solid transparent;
+    font-size: 18px;
+    background-color: transparent;
+    border-radius: 3px;
+    margin: 0 10px;
+    padding: 23px 33px;
+    overflow :visible;
+    cursor: pointer;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+button:active {
+    transform: translate(3px);
+}
+
+/* the ::before pseudo-element */
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #ffffff;
+    z-index: -1; /* Ensure it's behind the button text */
+    opacity: 0;  /* Start hidden */
+    transform: scale(0);  /* Start with the scaled down state */
+    transition: transform 0.3s, opacity 0.3s; /* Animation properties */
+}
+
+/* Button hover effect */
+.shrink-border {
+    background-color: transparent;
+    color: whitesmoke;
+}
+
+.shrink-border:hover {
+    color: #f4f4f4;
+    box-shadow: #000000;
+    
+}
+
+.shrink-border:hover::before {
+    opacity: 1;  /* Make the border visible */
+    transform: scale(1);  /* Animate the border to its original size */
+}
+
+/* This the footer section styles */
+footer{
+    background-color: #2a2727;
+    padding: 40px 0;
+    color: #ffffff;
+}
+
+.footer-content {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    gap: 20px;
+}
+.footer-links a {
+    color: #e6e6e6;
+    text-decoration: none;
+    transform: color 0.5s;
+}
+
+.footer-links a:hover {
+    color: #483e6a;
+}
+
+.footer-social {
+    margin-top: 0;
+}
+.footer-social a {
+    color: #e6e6e6;
+    font-size: 28px;
+    margin: 10px;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.footer-social a:hover {
+    color: #483e6a;
+}
+
+/* styling for the gallery page */
+#maingallery-container {
+    margin-top: 50px;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 75vw;
+    margin: 20px auto;
+}
+
+figure {
+    margin: 10px;
+    padding: 0px;
+    position: relative;
+}
+
+figure img {
+        width: 100%;
+    }
+#gallery img {
+    padding: 0px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    border: 3px solid #f7f2f2;
+    box-shadow: 0px 0px  5px #ccc;
+    z-index: -1;
+}
+
+figcaption {
+    background-color: antiquewhite;
+    width: 100%;
+    text-align: center;
+    color: #362d2d;
+    z-index: 1;
+    padding: 9px 0px 11px 0px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 6px;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 768px) {
+    figcaption {
+       font-size: 3vw;
+    }
+    #gallery {
+        grid-template-columns: 1fr ;
+        width: 90vw;
+    }
+}

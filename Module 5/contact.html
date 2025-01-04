@@ -17,11 +17,41 @@
         </ul>
     </nav>
 
-    <h1>Contact Us</h1>
-    <hr>
-    <p>For more information about our luxury yacht tours, please contact us at:</p>
-    <p>Phone: 1-800-555-1234</p>
-    <p>Email: info@elegant
+    <div class="contact">
+
+        <div class="contact-box">
+
+            <h2>Send us a message :</h2>
+
+            <form action="form-handler.php" method="post">
+                <label for="fname">First Name : </label> <br>
+                <input type="text" id="fname" name="fname" value="David"><br><br>
+
+                <label for="lname">Surname</label><br>
+                <input type="text" id="lname" name="lname" value="Smith"><br><br>
+
+                <input type="submit" value="Submit !" class="submit-button"> <br><br>
+
+                <h4>Whats Your Favourite Beach Destination ?</h4>
+                
+                <input type="radio" id="beach1" name="beach" value="Maldives">
+                <label for="beach1">Maldives</label><br>
+                
+                <input type="radio" id="beach2" name="beach" value="Hawaii">
+                <label for="beach2">Hawaii</label><br>
+                
+                <input type="radio" id="beach3" name="beach" value="Bali">
+                <label for="beach3">Bali</label><br>
+                
+                <input type="radio" id="beach4" name="beach" value="Phuket">
+                <label for="beach4">Phuket</label><br>
+
+
+            </form>
+
+        </div>
+
+    </div>
     
 </body>
 </html>

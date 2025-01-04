@@ -1,252 +1,341 @@
-.chapter-section{
-    border: 2px solid #d0d0d0;
-    padding: 20px;
-    margin: 80px auto;
-    border-radius: 5px;
-    max-width: 800px;
-    box-shadow: 0px 0px 10px 5px #0e0e0f;   
-    line-height: 1.6;
-    background-color: #4b4747;
+/* Style for chapter section */
+.chapter-section {
+    border: 2px solid #d0d0d0; /* Light grey border around the section */
+    padding: 20px; /* Adds space inside the section */
+    margin: 80px auto; /* Centers the section with a margin at the top and bottom */
+    border-radius: 5px; /* Rounds the corners of the section */
+    max-width: 800px; /* Limits the width of the section */
+    box-shadow: 0px 0px 10px 5px #0e0e0f; /* Adds a soft shadow around the section */
+    line-height: 1.6; /* Increases line height for better readability */
+    background-color: #4b4747; /* Dark grey background for the section */
 }
+
+/* Style for body */
 body {
-    
-    background-color:#393636;
+    background-color: #393636; /* Sets the background color of the page */
 }
-.chapter-section  h1 {
-    font-size: 2em;
-   color: #e9dddded;
-   border-bottom: 2px solid #e9dddded;
-   display: inline;
-   padding-bottom: 5px;
+
+/* Style for h1 inside chapter section */
+.chapter-section h1 {
+    font-size: 2em; /* Sets the font size */
+    color: #e9dddded; /* Light grey color for the text */
+    border-bottom: 2px solid #e9dddded; /* Underline effect */
+    display: inline; /* Makes the h1 behave like an inline element */
+    padding-bottom: 5px; /* Adds space under the text */
 }
+
+/* Style for h2 inside chapter section */
 .chapter-section h2 {
-    font-size: 1em;
-    color: #e9dddded;
-    font-family: Montserrat, sans-serif;
-    
+    font-size: 1em; /* Smaller font size for h2 */
+    color: #e9dddded; /* Light grey color for the text */
+    font-family: Montserrat, sans-serif; /* Specifies the font */
 }
+
+/* Navigation bar styles */
 nav {
-    position: fixed;
+    position: fixed; /* Fixed position at the top */
     top: 0;
     left: 0;
-    width: 100%;
-    padding : 10px 0px;
-    z-index: 1000;
-    background-color: #4b4747;
-    box-shadow: 0px 2px 5px rgba(0 , 0 , 0 , 0.5);  
-
+    width: 100%; /* Full width */
+    padding: 10px 0px; /* Padding inside the navbar */
+    z-index: 1000; /* Ensures the navbar is on top of other elements */
+    background-color: #4b4747; /* Dark grey background */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Soft shadow for navbar */
 }
- nav ul {
-    font-size: 16px;
-    list-style-type: none;
+
+/* Navigation links style */
+nav ul {
+    font-size: 16px; /* Font size for the links */
+    list-style-type: none; /* Removes default list styling */
     padding: 0;
     margin: 0;
-    justify-content: center;
-    display: flex;
+    justify-content: center; /* Centers the list items */
+    display: flex; /* Displays the items in a row */
 }
- nav a{
-    text-decoration: none;
-    /* padding: 10px; */
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #f7f2f2;
-    transform: color 0.5s , border-bottom 0.5s;
-    padding-bottom: 5px;
-    position: relative;
-}
-nav li{
-    margin: 0 10px;
-}
-nav a:hover{
-    color: #776daf;
-    border-bottom: 2px solid #f7f2f2;
-}
-/* Container Styles */
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-   width: 100vw;
-   text-align: center;
-   padding: 2rem;
-   /* padding: 80; */
-   background-image: url(images/tobias-tullius-XZOO6QHub60-unsplash.jpg);
-   background-size: cover;
-   background-position: center center;
-   background-repeat:  no-repeat;
-   position: relative;
-  }
 
-.container::before{
-    content: " ";
+nav a {
+    text-decoration: none; /* Removes underlines from links */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Specifies font */
+    color: #f7f2f2; /* Light text color */
+    transform: color 0.5s, border-bottom 0.5s; /* Smooth transition for color and underline */
+    padding-bottom: 5px; /* Padding at the bottom for spacing */
+    position: relative; /* Enables pseudo-elements positioning */
+}
+
+nav li {
+    margin: 0 10px; /* Adds space between list items */
+}
+
+/* Hover effect for links */
+nav a:hover {
+    color: #776daf; /* Changes color on hover */
+    border-bottom: 2px solid #f7f2f2; /* Adds an underline on hover */
+}
+
+/* Container for the main section */
+.container {
+    display: flex; /* Flexbox layout for flexible positioning */
+    flex-direction: column; /* Arranges items vertically */
+    justify-content: center; /* Centers the content vertically */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    text-align: center; /* Centers text */
+    padding: 2rem; /* Adds padding around the content */
+    background-image: url(images/tobias-tullius-XZOO6QHub60-unsplash.jpg); /* Background image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    position: relative; /* Allows for additional positioning of elements */
+}
+
+/* Dark overlay on the container */
+.container::before {
+    content: " "; /* Empty content for the pseudo-element */
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.2);
-    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.2); /* Transparent black overlay */
+    z-index: 0; /* Ensures the overlay is behind content */
 }
 
+/* Header and button content inside the container */
 .header-contenet, .button-container {
-    z-index: 1;
-}   
+    z-index: 1; /* Ensures content appears above the overlay */
+}
+
+/* Main heading inside container */
 .container h1 {
-    font-size: 2.5em;
-    color: white;
-    margin-bottom: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-shadow: 2px 2px 4px #000000;
+    font-size: 2.5em; /* Large font size */
+    color: white; 
+    margin-bottom: 10px; /* Space below the heading */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Font styling */
+    text-shadow: 2px 2px 4px #000000; /* Shadow for text */
 }
+
+/* Paragraph styling inside container */
 .container p {
-    font-size: 1.4em;
-    color: #e2d9d9;;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-shadow: 2px 2px 4px #000000;
+    font-size: 1.4em; /* Font size for paragraphs */
+    color: #e2d9d9; /* Light grey color */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Font styling */
+    text-shadow: 2px 2px 4px #000000; /* Shadow for text */
 }
-/* Header Section- Button Style */
+
+/* Button styling */
 button {
-    text-transform: capitalize;
-    position: relative;
-    border: 3px solid transparent;
-    font-size: 18px;
-    background-color: transparent;
-    border-radius: 3px;
-    margin: 0 10px;
-    padding: 23px 33px;
-    overflow :visible;
-    cursor: pointer;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    text-transform: capitalize; /* Capitalizes the button text */
+    position: relative; /* Allows pseudo-element positioning */
+    border: 3px solid transparent; /* Border with transparent color */
+    font-size: 18px; /* Button font size */
+    background-color: transparent; /* Transparent background */
+    border-radius: 3px; /* Rounded corners */
+    margin: 0 10px; /* Space between buttons */
+    padding: 23px 33px; /* Adds padding inside the button */
+    overflow: visible; /* Ensures the content is visible */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Specifies the font */
 }
 
+/* Button active state when clicked */
 button:active {
-    transform: translate(3px);
+    transform: translate(3px); /* Moves the button slightly when clicked */
 }
 
-/* the ::before pseudo-element */
+/* Before pseudo-element for button */
 button::before {
-    content: "";
-    position: absolute;
+    content: ""; /* Empty content */
+    position: absolute; /* Absolute positioning */
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    border: 3px solid #ffffff;
-    z-index: -1; /* Ensure it's behind the button text */
-    opacity: 0;  /* Start hidden */
-    transform: scale(0);  /* Start with the scaled down state */
-    transition: transform 0.3s, opacity 0.3s; /* Animation properties */
+    width: 100%; /* Full width of the button */
+    height: 100%; /* Full height of the button */
+    border: 3px solid #ffffff; /* White border */
+    z-index: -1; /* Ensures it's behind the button text */
+    opacity: 0; /* Initially hidden */
+    transform: scale(0); /* Initially scaled down */
+    transition: transform 0.3s, opacity 0.3s; /* Smooth transition for transform and opacity */
 }
 
 /* Button hover effect */
 .shrink-border {
-    background-color: transparent;
-    color: whitesmoke;
+    background-color: transparent; /* Transparent background */
+    color: whitesmoke; /* Light color on hover */
 }
 
 .shrink-border:hover {
-    color: #f4f4f4;
-    box-shadow: #000000;
-    
+    color: #f4f4f4; /* Lighter text color */
+    box-shadow: #000000; /* Adds shadow on hover */
 }
 
+/* Pseudo-element animation for the button hover */
 .shrink-border:hover::before {
-    opacity: 1;  /* Make the border visible */
-    transform: scale(1);  /* Animate the border to its original size */
+    opacity: 1; /* Make the border visible */
+    transform: scale(1); /* Animate the border to its original size */
 }
 
-/* This the footer section styles */
-footer{
-    background-color: #2a2727;
-    padding: 40px 0;
-    color: #ffffff;
+/* Footer styling */
+footer {
+    background-color: #2a2727; /* Dark background for footer */
+    padding: 40px 0; /* Padding inside footer */
+    color: #ffffff; /* White text color */
 }
 
+/* Footer content */
 .footer-content {
-    text-align: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    text-align: center; /* Centers the footer content */
+    max-width: 1200px; /* Maximum width */
+    margin: 0 auto; /* Centers the footer */
 }
+
+/* Footer links list */
 .footer-links {
-    list-style: none;
-    display: flex;
+    list-style: none; /* Removes default list styling */
+    display: flex; /* Flexbox layout */
     padding: 0;
-    justify-content: center;
-    gap: 20px;
+    justify-content: center; /* Centers the links */
+    gap: 20px; /* Adds space between links */
 }
+
+/* Footer link styling */
 .footer-links a {
-    color: #e6e6e6;
-    text-decoration: none;
-    transform: color 0.5s;
+    color: #e6e6e6; /* Light grey text color */
+    text-decoration: none; /* Removes underlines */
+    transform: color 0.5s; /* Smooth color transition */
 }
 
+/* Footer link hover effect */
 .footer-links a:hover {
-    color: #483e6a;
+    color: #483e6a; /* Changes color on hover */
 }
 
+/* Footer social icons */
 .footer-social {
-    margin-top: 0;
+    margin-top: 0; /* Removes margin on top */
 }
+
+/* Footer social icon links */
 .footer-social a {
-    color: #e6e6e6;
-    font-size: 28px;
-    margin: 10px;
-    text-decoration: none;
-    transition: color 0.5s;
+    color: #e6e6e6; /* Light grey color for icons */
+    font-size: 28px; /* Icon size */
+    margin: 10px; /* Adds space between icons */
+    text-decoration: none; /* Removes underline */
+    transition: color 0.5s; /* Smooth color transition */
 }
+
+/* Footer social icon hover effect */
 .footer-social a:hover {
-    color: #483e6a;
+    color: #483e6a; /* Changes color on hover */
 }
 
-/* styling for the gallery page */
+/* Styling for the gallery page */
 #maingallery-container {
-    margin-top: 50px;
+    margin-top: 50px; /* Adds margin on top of the gallery */
 }
 
+/* Gallery grid styling */
 #gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 75vw;
-    margin: 20px auto;
+    display: grid; /* Grid layout */
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal-width columns */
+    width: 75vw; /* 75% of viewport width */
+    margin: 20px auto; /* Centers the gallery */
 }
 
+/* Styling for individual gallery items */
 figure {
-    margin: 10px;
-    padding: 0px;
-    position: relative;
+    margin: 10px; /* Adds margin around each gallery item */
+    padding: 0px; /* Removes padding */
+    position: relative; /* Enables positioning of elements inside */
 }
 
+/* Image styling inside gallery */
 figure img {
-        width: 100%;
-    }
+    width: 100%; /* Ensures the image fills the figure */
+}
+
+/* Gallery images */
 #gallery img {
-    padding: 0px;
-    position: relative;
-    width: 100%;
-    box-sizing: border-box;
-    border: 3px solid #f7f2f2;
-    box-shadow: 0px 0px  5px #ccc;
-    z-index: -1;
+    padding: 0px; /* Removes padding */
+    position: relative; /* Enables positioning */
+    width: 100%; /* Makes image full width */
+    box-sizing: border-box; /* Ensures border is included in image dimensions */
+    border: 3px solid #f7f2f2; /* Border around images */
+    box-shadow: 0px 0px 5px #ccc; /* Soft shadow around images */
+    z-index: -1; /* Ensures the shadow is behind the image */
 }
 
+/* Caption style for images */
 figcaption {
-    background-color: antiquewhite;
-    width: 100%;
-    text-align: center;
-    color: #362d2d;
-    z-index: 1;
-    padding: 9px 0px 11px 0px;
-    text-transform: uppercase;
-    position: absolute;
-    bottom: 6px;
-    font-size: 1.2em;
+    background-color: antiquewhite; /* Light background for caption */
+    width: 100%; /* Full width      */
+    text-align: center; /* Centers the text */
+    color: #362d2d; /* Dark text color */
+    z-index: 1; /* Ensures the caption is above the image */
+    padding: 9px 0px 11px 0px; /* Padding around the caption */
+    text-transform: uppercase; /* Uppercase text */
+    position: absolute; /* Positioned at the bottom of the figure */
+    bottom: 6px; /* Positioning at the bottom */
+    font-size: 1.2em; /* Font size for caption */
 }
 
-@media screen and (max-width: 768px) {
+/* Responsive design for smaller screens */
+@media screen and (max-width: 600px) {
     figcaption {
-       font-size: 3vw;
+        font-size: 3vw; /* Makes font size relative to screen width */
     }
     #gallery {
-        grid-template-columns: 1fr ;
-        width: 90vw;
+        grid-template-columns: 1fr; /* Stacks gallery items in one column */
+        width: 90vw; /* Increases width of gallery */
     }
+}
+
+/* Styling for the contact form */
+.contact {
+    background-color: #4b4747;
+    padding: 20px;
+    margin: 80px auto;
+    max-width: 800px;
+    margin-bottom: 40vh;
+    box-shadow: 0px 4px 15px  #0e0e0f;
+    border-radius: 8px;
+}
+
+.contact h2 {
+    font-size: 1.5em;
+    color: #ffffffed;
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 20px;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.contact form {
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    color: #ffffffed;
+    line-height: 1.6;
+    margin: 0;
+    }
+
+.contact input {
+    font-size: 18px;
+    font-family: Montserrat, sans-serif;
+    color: #c2babaed;
+    line-height: 1.6;
+    margin: 0;
+}
+.contact .submit-button {
+    color: black;
+    background-color: #f7f2f2;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: Montserrat, sans-serif;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.contact .submit-button:hover {
+    background-color: #b4abe5;
+    color: rgb(57, 44, 154);
+    transform: scale(1.1);
 }

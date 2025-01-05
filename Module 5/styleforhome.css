@@ -8,6 +8,7 @@
     box-shadow: 0px 0px 10px 5px #0e0e0f; /* Adds a soft shadow around the section */
     line-height: 1.6; /* Increases line height for better readability */
     background-color: #4b4747; /* Dark grey background for the section */
+    display: block;
 }
 
 /* Style for body */
@@ -242,6 +243,11 @@ footer {
 #maingallery-container {
     margin-top: 50px; /* Adds margin on top of the gallery */
 }
+#maingallery-container h2 {
+    margin-top: 50px;
+    color: whitesmoke;
+    text-align: center;
+}
 
 /* Gallery grid styling */
 #gallery {
@@ -391,6 +397,7 @@ flex-basis: 48%;
     margin:  auto;
     max-width: 800px;
     box-shadow: 0px 4px 15px  #0e0e0f;
+    display: block;
 }
 .about-section h2 {
     font-size: 1.3em;
@@ -414,13 +421,14 @@ flex-basis: 48%;
 .action-class {
    
     text-align: center;
-    padding: 50px 20px;
+    padding: 40px 20px;
    background-color: rgba(69, 67, 81, 0.632);
     z-index: -1;
-    margin-top: 50px;
+    margin-top: 40px;
     box-shadow: 0px 4px 15px  #0e0e0f;
     border-radius: 8px;
-    margin-bottom: 40vh;
+    margin-bottom: 20vh;
+    display: block;
 
 }
 .action-class h2 {
@@ -428,6 +436,58 @@ flex-basis: 48%;
     color: #e2d6d6ed;
     font-family: Montserrat, sans-serif;
     margin-bottom: 20px;
+}
+
+/* Button alignment for tour button */
+.tours-section {
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.tour-button {
+    align-self: flex-end;
+}
+/* Tours Sectio Styles */
+.tour-button-container {
+    text-align: right;
+    margin-top: 10px;
+}
+.tour-button {
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #1b1b20;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    }
+
+.tour-button:hover {
+    background-color: #614bad;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 70px;
+    gap: 20px;
+}
+.card {
+    width: 80%; /* Set the width of each card to be 80% of the container */
+    max-width: 400px; /* Max width of the card */
+    margin: 10px 0; /* Space between cards */
+    background-color: #f8f9fa; /* Light background color */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow around the cards */
+    border-radius: 10px; /* Rounded corners for the cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect for hover */
+}
+.btn btn-primary:hover {
+    background-color: #614bad;
+    transform: scale(1.1);
+    
 }
 
 

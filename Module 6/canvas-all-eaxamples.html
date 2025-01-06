@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Example</title>
+    <style>
+      canvas {
+        margin: 10px ;
+        border: 2px solid black;
+    }
+    </style>
+</head>
+<body>
+    <!-- Rectangle Canvas -->
+    <canvas id="myCanvas" width="400" height="200"></canvas>
+    
+    <script>
+        // Rectangle Canvas 
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+        ctx.fillStyle = "green";
+        ctx.fillRect(20,10,250,100);
+    </script>
+
+    <!-- Circle Canvas -->
+
+    <canvas id="myCanvas1" width="400" height="200" ></canvas>
+    <script>
+              
+        const canvas1 = document.getElementById("myCanvas1");
+        const ctx1 = canvas1.getContext("2d");
+        ctx1.fillStyle = "#4af7af";
+        ctx1.beginPath();
+        ctx1.arc(85, 50, 40, 0, Math.PI*2 );
+        ctx1.fill();
+
+    </script>
+        <br>
+    <!-- Gradiant Rectangle Canvas -->
+
+    <canvas id="myCanvas2" width="400" height="300"></canvas>
+
+    <script>
+
+         const canvas2 = document.getElementById("myCanvas2");
+         const ctx2 = canvas2.getContext("2d");
+         
+         const gradient= ctx2.createLinearGradient(0, 0 , canvas2.width, canvas2.height);
+         
+         gradient.addColorStop(0, "blue");
+         gradient.addColorStop(1, "red");
+
+         ctx2.fillStyle= gradient;
+         ctx2.fillRect(0, 0, canvas2.width, canvas2.height);
+
+    </script>
+
+    <!--Click Orange circles  -->
+
+    <canvas id="myCanvas3" width="400" height="300"></canvas>
+
+    <script>
+
+        const canvas3 = document.getElementById("myCanvas3");
+        const ctx3= canvas3.getContext("2d");
+
+        canvas3.addEventListener("click", function(event){
+        const x= event.clientX - canvas3.offsetLeft;
+        const y = event.clientY - canvas3.offsetTop;
+
+        ctx3.beginPath();
+        ctx3.arc(x, y, 10, 0, 2 * Math.PI);
+        ctx3.fillStyle="orange";
+        ctx3.fill();
+    });
+    </script>
+
+   <!-- Draw event listener canvas (useful for taking signatures) -->
+<canvas id="myCanvas4" width="400" height="300"></canvas>
+
+<script>
+    const canvas4 = document.getElementById("myCanvas4");
+    const ctx4 = canvas4.getContext("2d");
+
+    let isDrawing = false;
+
+    canvas4.addEventListener("mousedown", function (event1) {
+        isDrawing = true;
+        draw(event1.clientX - canvas4.offsetLeft, event1.clientY - canvas4.offsetTop);
+    });
+
+    canvas4.addEventListener("mousemove", function (event1) {
+        if (isDrawing) {
+            draw(event1.clientX - canvas4.offsetLeft, event1.clientY - canvas4.offsetTop);
+        }
+    });
+
+    canvas4.addEventListener("mouseup", function () {
+        isDrawing = false;
+    });
+
+    function draw(x, y) {
+        ctx4.fillStyle = "black";
+        ctx4.fillRect(x, y, 5, 5);
+    }
+</script>
+  
+    <!-- Canvas for image rotate-spins -->
+    
+    <canvas id="myCanvas5" width="400" height="300"></canvas>
+
+    <script>
+    const canvas5 = document.getElementById("myCanvas5");
+    const ctx5 = canvas5.getContext("2d");
+
+    const img = new Image();
+    img.src = "download1.png";
+
+    img.onload= function() {
+      ctx5.drawImage (img, 0 , 0, canvas5.width, canvas5.height);
+    };
+
+    canvas5.addEventListener("click", function() {
+      ctx5.clearRect(0, 0, canvas5.width, canvas5.height);
+      const angle = 0;
+      rotateImage(img, angle);
+    });
+
+    function rotateImage(image, angle){
+      ctx5.save();
+      ctx5.translate(canvas5.width/2, canvas5.height/2);
+      ctx5.rotate((angle*Math.PI)/180);
+      ctx5.drawImage(image, -canvas5.width/2, -canvas5.height/2, canvas5.width, canvas5.height);
+      ctx5.restore();
+
+      const newAngle = angle + 10;
+      if (newAngle < 360) {
+          setTimeout(function() {
+              rotateImage(image, newAngle);
+          },100);
+      }
+    }
+    </script>
+</body>
+</html>

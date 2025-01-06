@@ -13,3 +13,29 @@ h1 {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.chapter-section {
+    border: 2px solid #d0d0d0; /* Light grey border around the section */
+    padding: 20px; /* Adds space inside the section */
+    margin: 80px auto; /* Centers the section with a margin at the top and bottom */
+    border-radius: 5px; /* Rounds the corners of the section */
+    max-width: 800px; /* Limits the width of the section */
+    box-shadow: 0px 0px 10px 5px #0e0e0f; /* Adds a soft shadow around the section */
+    line-height: 1.6; /* Increases line height for better readability */
+    background-color: #4b4747; /* Dark grey background for the section */
+    display: flex;
+    gap: 50px;
+}
+button {
+    text-transform: capitalize; /* Capitalizes the button text */
+    position: relative; /* Allows pseudo-element positioning */
+    border: 3px solid white; /* Border with transparent color */
+    font-size: 18px; /* Button font size */
+    background-color: whitesmoke; /* Transparent background */
+    border-radius: 3px; /* Rounded corners */
+    margin: 0 10px; /* Space between buttons */
+    padding: 23px 33px; /* Adds padding inside the button */
+    overflow: visible; /* Ensures the content is visible */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Specifies the font */
+    }
+h2, p {color: white;}

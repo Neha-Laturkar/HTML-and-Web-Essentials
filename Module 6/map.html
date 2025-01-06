@@ -5,8 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Map - iframe</title>
     <link rel="stylesheet" href="style.css">
+   <script src="script.js"></script>
 </head>
 <body>
+
+    <section class="chapter-section">
+        <button onclick="myFunction()">Click Me !</button>
+    </section>
+
+    <section class="chapter-section">   
+
+        <h1 id="test"> This Is The Original Heading.</h1>
+        <button onclick="headingchange()"> Click me to change this heading!</button>
+       
+    </section>
+
+    <!-- Change heading to paragraph Java script -->
+
+    <section class="chapter-section">
+
+            <h2 id="heading">Hello World?</h2>
+            <button onclick="changeTag()">Change Heading</button>
+
+    </section>
+
+    <section class="chapter-section">
+            <img id="myImage" src="pietro-de-grandi-6U4wogjLArk-unsplash.jpg" alt="Original image" height="300">
+            <button onclick="changeAttributes()">Change Attributes</button>
+    </section>
+
+    <!-- Event Listener script, enter key  -->
+
+    <section class="chapter-section">
+        <img id="myImage2" src="andrew-neel-0AwoTNSdwVM-unsplash.jpg" alt="image 2" height="300">
+        <p style="font-size: 1.5rem;">Press Enter To change The Image</p>
+    </section>
 
     <section class="container">
         <h1>Disover The Ocean's Mystry</h1>

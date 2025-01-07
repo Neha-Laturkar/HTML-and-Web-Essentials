@@ -1,0 +1,178 @@
+/* General body styling */
+body {
+    background-color: #393636; /* Sets the background color of the page */
+    margin: 0; /* Remove default margin */
+    min-height: 100vh; /* Ensures the page takes up the full height of the viewport */
+    display: block; /* Ensure normal block layout behavior */
+    padding-bottom: 60px; /* Give space for the footer */
+}
+
+/* Headings and paragraphs styling */
+h2, p {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Section content style */
+.section-tour-content {
+    background-color: #403b3b;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0px 5px 15px black;
+    height: auto;
+    border: 1px solid whitesmoke;
+}
+
+/* Grid layout for content */
+.row-push-down {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+    gap: 20px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Style for columns inside the grid */
+.column-div-tour-content {
+    border-radius: 8px;
+    padding: 10px 20px;
+    height: auto;
+    box-shadow: 0px 5px 15px black;
+    border: none; /* Remove borders from the columns */
+}
+
+/* Button styling */
+button {
+    text-transform: uppercase;
+    position: relative;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #7e70af;
+    border: 2px solid black;
+    box-shadow: black 0px 5px 15px;
+    margin: 0 10px;
+    border-radius: 5px;
+    padding: 12px 33px;
+}
+
+button:hover {
+    background-color: #cecece;
+}
+
+.buttondiv {
+    display: flex;
+    gap: -5px;
+}
+
+/* Navigation Bar Styles */
+nav {
+    position: fixed; /* Fixed position at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #4b4747;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Navigation links styling */
+nav ul {
+    font-size: 16px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #f7f2f2;
+    padding-bottom: 5px;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+/* Hover effect for navigation links */
+nav a:hover {
+    color: #776daf;
+    border-bottom: 2px solid #f7f2f2;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2a2727;
+    padding: 40px 0;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    clear: both; /* Make sure footer is always below content */
+}
+
+/* Footer content */
+.footer-content {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer links list */
+.footer-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Footer link styling */
+.footer-links a {
+    color: #e6e6e6;
+    text-decoration: none;
+}
+
+/* Footer link hover effect */
+.footer-links a:hover {
+    color: #483e6a;
+}
+
+/* Footer social icons */
+.footer-social {
+    margin-top: 0;
+}
+
+/* Footer social icon links */
+.footer-social a {
+    color: #e6e6e6;
+    font-size: 28px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+/* Footer social icon hover effect */
+.footer-social a:hover {
+    color: #483e6a;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    /* Adjust grid to single column for small screens */
+    .row-push-down {
+        grid-template-columns: 1fr; 
+    }
+
+    /* Stack navigation items vertically on small screens */
+    nav ul {
+        flex-direction: column;
+    }
+    
+    /* Make both videos go into one column */
+    .row-push-down iframe {
+        grid-column: span 1; /* Make videos take full width */
+    }
+}

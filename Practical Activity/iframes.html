@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enbedded Document</title>
+    <link rel="stylesheet" href="styles-iframes.css">
+</head>
+<body>
+
+    <header class="headersection">
+        <h1>Find us here</h1>
+    </header>
+
+    <main>
+        
+            <h2>Our Location</h2>
+        </div>
+            
+        <div class="iframe-container">
+            <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_CODE"
+            title="Google Maps Location"
+            width="600"
+            height="450"
+            loading="lazy"
+            allowfullscreen=""
+            referrerpolicy="no-referrer-when-downgrade"
+            sandbox="allow-scripts allow-same-origin allow-popups">
+            <p>Your browser does not support iframes. Please visit our <a href="location-link">location page</a>.</p>
+        </iframe>
+
+    </div>
+
+        <div class="iframe-controls">
+            <h3>Some useful features here</h3>
+            <button class="buttoncss"  onclick="reLoadFrame()" >Reload Content</button>
+            <button class="buttoncss"  onclick="toggleFullscreen()" >Fullscreen</button>
+        </div>
+
+        
+
+    </main>
+
+    <aside>
+        <p>You can Contact us by clicking <a href="https://google.com">this</a>link</p>
+    </aside>
+
+    <footer>
+        <p>&copy; 2025 Registerd Company. All rights reserved .</p>
+    </footer>
+
+    <script>
+
+        function reLoadFrame() {
+            const frame = document.querySelector('iframe');
+            frame.src = frame.src;
+        }
+
+        function toggleFullscreen() {
+            const frame = document.querySelector('iframe');
+            if (frame.requestFullscreen()){
+                frame.requestFullscreen();
+            }
+        }
+    </script>
+
+    
+</body>
+</html>

@@ -1,8 +1,10 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    background-color: black;
+body  {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(11, 11, 13);
+}
+
+.myName{
+    margin-top: 18px;
 }
 
 .container {
@@ -10,41 +12,40 @@ body, html {
     background-size: 80%;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 100%; /* Full height of the viewport */
+    height: 100%; 
     width: 100%;
-    position: relative; /* Allow absolute positioning of children */
+    position: relative; 
 }
 
 header {
-    display: flex; /* Use flexbox to align the elements horizontally */
-    justify-content: space-between; /* Space out #myName and nav-elements */
-    align-items: center; /* Vertically center them */
-    position: absolute; /* Position them at the top of the page */
-    top: 0; /* Align them to the top of the container */
-    width: 100%; /* Ensure it takes the full width of the container */
-    padding: 10px; /* Add padding for spacing */
-    z-index: 1; /* Ensure the header stays on top of the background image */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    position: absolute; 
+    top: 0; 
+    width: 100%; 
+    padding: 10px; 
+    z-index: 1; 
 }
 
-#myName {
-    text-align: left;
-    margin-top: 5px;
-    border: 1px solid black;
-    width: 100px;
-    height: 50px;
-    padding: 5px;
+h2{
+    
+    margin-top: 10px;
+    margin-left: 20px;
+   font-weight: 450;
     color: white;
+    
 }
 
 .nav-elements {
-    display: flex; /* Align navigation items horizontally */
-    align-items: center; /* Vertically center the navigation items */
+    display: flex; 
+    align-items: center; 
     padding-right: 50px;
 }
 
 .nav-elements ul {
-    display: flex; /* Align list items horizontally */
-     gap: 5px;/* Space between items */
+    display: flex; 
+     gap: 5px;
     list-style-type: none;
     margin: 2px;
     padding: 8px;
@@ -58,19 +59,106 @@ header {
 .nav-elements a {
     text-decoration: none;
     color: aliceblue;
-    font-size: 18px;
+    font-size: 17px;
     border: 1px solid rgb(205, 199, 190);
     padding: 5px 15px ;
-    font-size: 20px;
+    
     background-color: #4b3e3e;
       
 }
-/* 
-.anchor-style{
-    border: 1px solid rgb(205, 199, 190);
-    padding: 5px 10px ;
-    font-size: 20px;
-    background-color: #4b3e3e;
+button {
     
-} */
+    background-color: white;
+    color: #000;
+    font-size: 19px;
+    
+    font-weight: 500;
+    padding: 10px 70px;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: rgb(191, 247, 247);
+    transform: scale(1.1);
+}
+
+.main-container {
+   
+    padding: 70px;
+    padding-right: 1000px;
+    color: aliceblue;
+    box-sizing: content-box;
+    margin-top: 270px ;
+    display:inline-block;
+}
+
+ 
+.main-container p {
+    line-height: 1.5;
+    color: white;
+}
+/* Portfolio page css code */
+.portfolio-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 10px;
+    position: relative;
+    width: 75vw;
+   
+    margin: 20px auto;
+    
+ }
+ img {
+    height: 100%;
+    width: 100%;
+ }
+ .gallaryImg {
+    margin-top: 100px;
+    text-align: center;
+ }
+
+ /* Service page css code */
+
+  h1 {
+    color: white;
+    font-size: 45px;
+    font-weight: 300;
+ }
+
+ .what-i-do h1 {
+    margin-top: 45px;
+    margin-left: 25px;
+ }
+ .services-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   border-bottom: 3px solid rgb(238, 244, 246);
+   
+ }
+.service h3, p  {
+    color: white;
+     }
+
+.service h3 {font-size: 25px;}
+.service p {font-size: 16px;
+            line-height: 0.6;}
+
+ .service {
+    justify-content: center;
+    padding: 10px;
+ }
+ .service-main {
+    display: flex;
+    margin-top: 180px;
+    margin-left: 19%;
+    gap: 150px;
+
+ }
+.service-button {
+    margin-left: 61% ;
+    padding: 20px;
+}
+
+
 

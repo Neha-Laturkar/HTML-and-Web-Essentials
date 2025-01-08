@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+ <!-- This is header contenet with myName logo and navigation links -->
+     
+ <header class="header-section">
+    <div class="myName">
+     <h2>NEHA</h2>
+    </div>
 
-   <header id="myName">
-    <h1>Neha</h1>
-   </header>
- 
-   <nav>
+<nav class="nav-elements">
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
@@ -20,8 +22,37 @@
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
-   </nav>
+</nav>
+</header>
+ 
+     <main class="contact-container">  
+     
+        <h2>LET ME TELL YOUR DIGITAL STORIES</h2>
 
+    <form action="" method="post">
+        
+        <form id="contact-form" action="#" method="post" ></form>
+            <div class="form-group">
+                <label for="fname">FIRST NAME</label><br>
+                <input type="text" name="fname" id="fname" required><br>
+            </div>
+
+            <form id="contact-form" action="#" method="post"></form>
+            <div class="form-group">
+                <label for="fname">LAST NAME</label><br>
+                <input type="text" name="lname" id="lname" required><br>
+            </div>
+
+            <form id="contact-form" action="#" method="post"></form>
+            <div class="form-group">
+                <label for="fname">EMAIL</label><br>
+                <input type="email" name="email" id="email" required><br>
+            </div>
+
+        <button type="submit">SUBMIT</button>
+    </form>
+   </main>
+</main>
     
 </body>
 </html>

@@ -1,0 +1,76 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+}
+
+.container {
+    background-image: url(images/hero-image.jpg);
+    background-size: 80%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%; /* Full height of the viewport */
+    width: 100%;
+    position: relative; /* Allow absolute positioning of children */
+}
+
+header {
+    display: flex; /* Use flexbox to align the elements horizontally */
+    justify-content: space-between; /* Space out #myName and nav-elements */
+    align-items: center; /* Vertically center them */
+    position: absolute; /* Position them at the top of the page */
+    top: 0; /* Align them to the top of the container */
+    width: 100%; /* Ensure it takes the full width of the container */
+    padding: 10px; /* Add padding for spacing */
+    z-index: 1; /* Ensure the header stays on top of the background image */
+}
+
+#myName {
+    text-align: left;
+    margin-top: 5px;
+    border: 1px solid black;
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+    color: white;
+}
+
+.nav-elements {
+    display: flex; /* Align navigation items horizontally */
+    align-items: center; /* Vertically center the navigation items */
+    padding-right: 50px;
+}
+
+.nav-elements ul {
+    display: flex; /* Align list items horizontally */
+     gap: 5px;/* Space between items */
+    list-style-type: none;
+    margin: 2px;
+    padding: 8px;
+}
+
+.nav-elements li {
+    margin: 5px 3px;
+   
+}
+
+.nav-elements a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 18px;
+    border: 1px solid rgb(205, 199, 190);
+    padding: 5px 15px ;
+    font-size: 20px;
+    background-color: #4b3e3e;
+      
+}
+/* 
+.anchor-style{
+    border: 1px solid rgb(205, 199, 190);
+    padding: 5px 10px ;
+    font-size: 20px;
+    background-color: #4b3e3e;
+    
+} */
+

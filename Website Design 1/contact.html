@@ -5,54 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact-page by Neha</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
- <!-- This is header contenet with myName logo and navigation links -->
-     
- <header class="header-section">
+<header class="header-section">
     <div class="myName">
-     <h2>NEHA</h2>
+        <h2>NEHA</h2>
     </div>
-
-<nav class="nav-elements">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+    <nav class="nav-elements">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 </header>
- 
-     <main class="contact-container">  
-     
-        <h2>LET ME TELL YOUR DIGITAL STORIES</h2>
-
-    <form action="" method="post">
+<main class="contact-container">
+    <div class="form-block">
         
-        <form id="contact-form" action="#" method="post" ></form>
+            <h2>LET ME TELL YOUR DIGITAL STORIES</h2>
+            <form id="contact-form" action="#" method="post"></form>
             <div class="form-group">
                 <label for="fname">FIRST NAME</label><br>
                 <input type="text" name="fname" id="fname" required><br>
             </div>
-
-            <form id="contact-form" action="#" method="post"></form>
             <div class="form-group">
-                <label for="fname">LAST NAME</label><br>
+                <label for="lname">LAST NAME</label><br>
                 <input type="text" name="lname" id="lname" required><br>
             </div>
-
-            <form id="contact-form" action="#" method="post"></form>
             <div class="form-group">
-                <label for="fname">EMAIL</label><br>
+                <label for="email">EMAIL</label><br>
                 <input type="email" name="email" id="email" required><br>
             </div>
-
-        <button type="submit">SUBMIT</button>
-    </form>
-   </main>
+            <button type="submit" class="contact-btn">SUBMIT</button>
+        </form>
+        <br>
+        <div class="social-links">
+            <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
 </main>
-    
 </body>
 </html>

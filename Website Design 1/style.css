@@ -5,6 +5,7 @@ body  {
     background-color: rgb(0, 0, 0);
 }
 
+
 .myName{
     margin-top: 18px;
 }
@@ -64,11 +65,11 @@ h2{
     font-size: 17px;
     border: 1px solid rgb(205, 199, 190);
     padding: 5px 15px ;
-    
+    transition: transform 0.3s ease, background-color 0.3s ease;
     background-color: #4b3e3e;
       
 }
-button {
+.button-class {
     
     background-color: white;
     color: #000;
@@ -79,9 +80,10 @@ button {
     border-radius: 3px;
 }
 
-button:hover {
+.button-class:hover {
     background-color: rgb(191, 247, 247);
     transform: scale(1.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .main-container {
@@ -160,20 +162,120 @@ button:hover {
 .service-button {
     margin-left: 61% ;
     padding: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 /* Contact page css code */
 
 .contact-container {
-    margin-top: 100px;
-    margin-left: 20%;
-    margin-right: 20%;
-    padding: 10px;
-    border: 1px solid white;
+  
+   background-image: url(images/gallary1.jpg);
+   background-size:cover;
+   opacity: 70%;
+   background-position: center center;
+   background-repeat: no-repeat;
+   height: 100%;
+   width: 100%;
+   position: relative;
+   
+   image-orientation: from-image;
+   margin: 0;
+   padding: 50px;
 }
 
-.form-section {
-     border: 1px solid white;
-     justify-content: center;
+.form-block {
+    margin: 10% auto;
+    max-width: 800px ;
+  
 }
+.form-group {
+    margin-bottom: 0.2rem;
+}
+
+
+label {
+    
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+    font-size: 14px;
+    color: white;
+    
+}
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 0.50rem;
+    border: 1px white solid;
+    background-color: black;
+    margin-top: 0;
+}
+
+
+
+.social-links {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.contact-container .form-block .social-links a {
+    font-size: 32px;
+    color: black;
+    background-color: white;
+    padding: 4px;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+.contact-container .form-block .social-links a:hover {
+    transform: scale(1.1);
+    background-color: rgb(191, 247, 247);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-btn {
+    padding: 10px 50px;
+    margin-left: 660px;
+    margin-top: 30px;
+    font-weight: 600;
+}
+.contact-btn:hover {
+    background-color:  rgb(191, 247, 247);
+    transform: scale(1.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+/* About Page css code */
+
+.aboutmain-container {
+    margin-top: 10%;
+    margin-left: 200px;
+    display: flex;
+    max-width: 1000px;
+    justify-content: left;
+    gap: 150px;
+    padding: 50px;
+}
+.aboutmain-container p {
+    font-size: 15px;
+    line-height: 1.3rem;
+    
+}
+.about-button {
+    margin-top: 23px;
+    
+    padding: 10px 100px;
+    font-size: 15px;
+    font-weight: 600;
+    
+}
+.about-button:hover {
+    background-color: rgb(191, 247, 247);
+    transform: scale(1.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
 
 

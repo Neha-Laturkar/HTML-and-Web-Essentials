@@ -12,7 +12,7 @@ body  {
 
 .container {
     background-image: url(images/hero-image.jpg);
-    background-size: 80%;
+    background-size: 90%;
     background-position: center center;
     background-repeat: no-repeat;
     height: 100%; 
@@ -69,6 +69,11 @@ h2{
     background-color: #4b3e3e;
       
 }
+
+.nav-elements a:hover{
+    background-color: #808cb1;
+    padding: 7px 17px;
+    }
 .button-class {
     
     background-color: white;

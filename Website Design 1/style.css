@@ -173,8 +173,9 @@ h2{
 
 .contact-container {
   
-   background-image: url(images/gallary1.jpg);
+    background-image: url(images/gallary1.jpg); /*linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) ; */
    background-size:cover;
+   
    opacity: 70%;
    background-position: center center;
    background-repeat: no-repeat;
@@ -263,7 +264,7 @@ input[type="text"], input[type="email"] {
     padding: 50px;
 }
 .aboutmain-container p {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.3rem;
     
 }

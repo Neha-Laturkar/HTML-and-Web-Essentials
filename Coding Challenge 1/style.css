@@ -1,0 +1,142 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0; /* Reset margin */
+    background-color: rgba(69, 4, 69, 0.777);
+    font-family: Montserrat, sans-serif;
+}
+
+
+header {
+    display: flex;
+    gap: 15%;
+    padding: 5px;
+    background-color: rgb(71, 58, 85);
+    box-shadow: 5px 5px 15px black;
+}
+.logo em {
+    color: rgb(248, 255, 253);
+    font-size: 35px;
+    margin-left: 15px;
+    text-shadow: 3px 3px 3px black;
+    
+}
+
+ nav {
+    padding: 10px;
+    
+} 
+
+nav ul {
+    display: flex;
+    margin: 2px;
+    
+    list-style-type: none;
+    
+}
+nav li {
+    margin: 5px 7px ;
+   
+}
+nav a {
+    text-decoration: none;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    
+    color: aliceblue;
+    background-color: rgba(125, 108, 145, 0.522);
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 5px 5px 12px black;
+}
+nav a:hover {
+   
+    background-color: aliceblue;
+    color: black;
+    
+}
+
+.social-icons {
+       font-size: 40px;
+       margin-left: 170px;
+}
+
+.social-icons i {
+    color: white;
+    box-shadow: 5px 5px 12px black;
+}
+.social-icons i:hover {
+    color: rgba(125, 125, 206, 0.759);
+    transform: scale(1.4);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-top: 130px;
+    height: 80vh;
+    width: 100%;
+    background-image: url("images/hero-image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    gap: 15px;
+  
+
+}
+.header-text, .paragraph-text {
+    display: block;
+    padding: 10px;
+    max-width: 500px;
+    border: 2px solid black;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(60, 12, 63, 0.774);
+    box-shadow: 5px 5px 12px black;
+}
+.paragraph-text button {
+    padding: 5px 50px;
+    margin-left: 270px;
+    border: 2px solid black;
+    box-shadow: 3px 3px 3px black;
+}
+
+.btns button{
+   
+    padding: 10px 84px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 12px black;
+   background-color: rgb(141, 64, 132);
+   color: white;
+}
+
+button:hover {
+    background-color: rgb(188, 238, 221);
+}
+.btns button:hover {
+    background-color: rgb(170, 218, 202);
+}
+
+
+
+footer {
+    display: flex;
+    
+    gap: 230px;
+     padding: 5px; 
+    background-color: rgba(64, 45, 62, 0.862);
+    box-shadow: 5px 5px 10px black;
+}
+
+footer nav {
+   padding-left: 500px;
+}
+footer i {
+    padding-left: 5px;
+}
+

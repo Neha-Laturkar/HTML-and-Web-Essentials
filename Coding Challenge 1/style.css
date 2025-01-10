@@ -14,12 +14,18 @@ header {
     background-color: rgb(71, 58, 85);
     box-shadow: 5px 5px 15px black;
 }
-.logo em {
+.logo a {
     color: rgb(248, 255, 253);
     font-size: 35px;
     margin-left: 15px;
     text-shadow: 3px 3px 3px black;
+    text-decoration: none;
     
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
  nav {
@@ -56,6 +62,7 @@ nav a:hover {
     color: black;
     
 }
+ 
 
 .social-icons {
        font-size: 40px;
@@ -67,7 +74,7 @@ nav a:hover {
     box-shadow: 5px 5px 12px black;
 }
 .social-icons i:hover {
-    color: rgba(125, 125, 206, 0.759);
+    color: rgba(22, 186, 222, 0.759);
     transform: scale(1.4);
     transition: transform 0.3s ease, background-color 0.3s ease;
 
@@ -79,7 +86,8 @@ nav a:hover {
     text-align: left;
     padding-top: 130px;
     height: 80vh;
-    width: 100%;
+    /* width: 100%; */
+    max-width: 1800px;
     background-image: url("images/hero-image.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -139,4 +147,162 @@ footer nav {
 footer i {
     padding-left: 5px;
 }
+/* This code CSS is for About-page */
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1800px;
+    height: 80%;
+    background-image: url(images/hero-image.png);
+    background-size: cover;
+    padding: 90px;
+    gap: 70px;
+}
+.about-container img {
+    box-shadow: 5px 10px 10px 10px rgba(0, 0, 0, 0.777);
+}
+.about-me  {
+    display: block;
+    background-color: rgba(98, 19, 104, 0.829);
+    box-shadow: 5px 10px 10px 10px rgba(0, 0, 0, 0.777);
+    padding: 15px;
+    color: white;
+    text-align: center;
+    
+}
+.about-me h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    border-bottom: 2.5px solid white;
+    display: inline;
+    padding-bottom: 5px;
+    padding: 5px;
+}
+.about-me p {
+    margin-top: 20px;
+    font-weight: 350;
+}
+/* This is CSS code for Skills PAge */
 
+.skills-container {
+    border: 2px solid black;
+    padding: 70px ;
+    padding-left: 300px;
+    max-width: 1900px;
+    height: 80%;
+    background-image: url(images/hero-image.png);
+    background-size: cover;
+  
+}
+
+.skills-table {
+    background-color: rgba(58, 11, 58, 0.742);
+    width: 80%;
+   
+    border-collapse: collapse;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.762);
+   
+}
+
+.skills-table th, 
+.skills-table td {
+    padding: 10px;
+    border: 2px solid black;
+    color: white;
+    text-align: left; }
+
+.skills-table th {
+    background-color: rgba(83, 16, 83, 0.684); 
+}
+
+.skills-table td {
+    background-color: rgba(119, 44, 119, 0.793); 
+}
+
+table {
+    margin-top: 20px; 
+}
+
+/* This CSS code for PROJECT_page */
+
+.card-body p {
+    font-size: 13px;
+    font-size: 500;
+}
+section {
+    display: flex;
+    padding: 20px;
+    gap: 40px;
+}
+.project-container {
+    padding-left: 110px;
+    padding-top: 0;
+}
+.card {
+    box-shadow: 3px 3px 3px 4px rgba(0, 0, 0, 0.495);
+}
+/* This is CSS code for Contact-page */
+.contact-container {
+    max-width: 900px;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 0.3 rem 4rem;
+    background-color: rgba(83, 11, 83, 0.789);
+    box-shadow: 3px 3px 3px 7px rgba(8, 0, 8, 0.867);
+    
+}
+.contact-container h2 {
+    color: white;
+    font-size: 25px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid white;
+    display: inline;
+}
+.form-elements {
+    margin: 10px 4px;
+}
+label {
+    display: block;
+    color: white;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.60rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-elements button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.form-elements button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+input:valid,
+textarea:valid,
+select:valid {
+    border-color: #28a745;
+}
+
+input:invalid:not(:placeholder-shown),
+textarea:invalid:not(:placeholder-shown) {
+    border-color: #dc3545;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}

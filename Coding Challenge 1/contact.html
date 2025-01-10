@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio-Home Page</title>
+    <title>Portfolio-Contact Page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,6 @@
    <header>
      <div class="logo">
         <h1><em><a href="index.html">Neha's Portfolio</a></em></h1>
-        
      </div>
 
      <nav>
@@ -41,26 +40,54 @@
 
     <!-- This is main section -->
 
-    <div class="container">
+    <div class="skills-container">
 
-        <div class="header-text"><h2>Crafting Digital Experiences with Elegance</h2></div>
+      <div class="contact-container">
 
-        <div class="paragraph-text"><p>"As a passionate web designer, I specialize 
-            in creating visually stunning, user-friendly websites that bring your vision to life. 
-            From concept to launch, I combine creativity and functionality to deliver designs that captivate 
-            audiences and enhance brand identity."</p>
+      <h2> Please fill free to share me your views on my website</h2>
 
-            <button type="submit" >READ MORE</button>
-        </div>
+      <form action="">
 
-        <div class="btns">
-            <button type="submit" class="btn">PORTFOLIO</button>
-            <button type="submit" class="btn">SERVICES</button>
-        </div>
+         <div class="form-elements">
+            <label for="fname">YOUR NAME</label>
+            <input type="text" id="fname" name="fname" required>
+         </div>
+      
+         <div class="form-elements">
+            <label for="email">EMAIL ID</label>
+            <input type="email" id="email" name="email">
+         </div>
+
+         <div class="form-elements">
+             <label for="">LANGUAGE</label>
+             <select name="selected-lang" id="selected-lang" required>
+                  <option value="">PLEASE SELECT YOUR FAVOURITE PROGRAMMING LANGUAGE</option>
+                  <option value="c">C</option>
+                  <option value="c++">C++</option>
+                  <option value="java">JAVA</option>
+                  <option value="java-script">Java Script</option>
+                  <option value="python">Python</option>
+                  <option value="python">HTML CSS</option>
+             </select>
+         </div>
+         
+            <div class="form-elements">
+               <label for="message">SEND ME A SHORT MESSAGE</label>
+               <textarea name="message" id="message" rows="2" minlength="5" required></textarea>
+            </div>
+
+            <div class="form-elements">
+               <button type="submit">SUBMIT</button>
+            </div>
+      
+      </form>
+
+      </div>
+       
     </div>
 
     <footer>
-                   
+               
             <nav>
                <ul>
                    <li><a href="about.html">ABOUT</a></li>

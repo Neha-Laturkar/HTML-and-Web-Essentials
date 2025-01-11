@@ -283,7 +283,7 @@ input[type="text"], input[type="email"] {
 }
 
 /* Responsive Design for all pages */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     header {
         flex-direction: row;
         align-items: flex-start;
@@ -354,7 +354,7 @@ input[type="text"], input[type="email"] {
     }
     .service-button {
         padding: 7px;
-        margin-left: 250px;
+        margin-left: 200px;
     }
     .form-block {
         
@@ -364,6 +364,9 @@ input[type="text"], input[type="email"] {
     .social-links  {
         display: flex;
         
+    }
+    .contact-container {
+        margin-top: 150px;
     }
 }
 

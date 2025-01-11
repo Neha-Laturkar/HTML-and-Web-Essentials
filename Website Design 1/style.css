@@ -282,6 +282,90 @@ input[type="text"], input[type="email"] {
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
+/* Responsive Design for all pages */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+       
+    }
+    .container {
+        margin-top: 20px;
+    }
+    
+    header .myName {
+        margin-top: 0;
+        font-size: 15px;
+    }
+
+    .nav-elements {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        
+    }
+
+    .nav-elements ul {
+        flex-direction: row;
+        gap: 5px;
+    }
+    .nav-elements a {
+        padding: 3px;
+        font-size: 13px;
+    }
+
+    .main-container {
+        padding: 20px;
+        margin-top: 170px;
+        text-align: center;
+    }
+
+    .button-class {
+        padding: 10px 20px;
+    }
+
+    .portfolio-images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-main {
+        flex-direction: column;
+        margin-left: 0;
+        gap: 20px;
+    }
+
+    .contact-btn {
+        margin-left: 0;
+    }
+
+    .aboutmain-container {
+        flex-direction: column;
+        margin-left: 0;
+        gap: 20px;
+    }
+
+    .about-button {
+        width: 100%;
+        text-align: center;
+    }
+    .service p {
+        line-height: 1.1;
+    }
+    .service-button {
+        padding: 7px;
+        margin-left: 250px;
+    }
+    .form-block {
+        
+        width: 250px;
+        
+    }
+    .social-links  {
+        display: flex;
+        
+    }
+}
 
 
 

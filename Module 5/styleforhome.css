@@ -294,7 +294,7 @@ figcaption {
     font-size: 1.2em; /* Font size for caption */
 }
 
-/* Responsive design for smaller screens */
+/* Responsive design for smaller screens gallery page*/
 @media screen and (max-width: 600px) {
     figcaption {
         font-size: 3vw; /* Makes font size relative to screen width */
@@ -304,6 +304,8 @@ figcaption {
         width: 90vw; /* Increases width of gallery */
     }
 }
+
+
 
 /* Styling for the contact form */
 .contact {
@@ -489,5 +491,39 @@ section {
     transform: scale(1.1);
     
 }
+/* Media query for small screens (mobile devices) */
+@media (max-width: 768px) {
+    section {
+        flex-direction: column; /* Stack the cards vertically */
+        margin: 50px 20px; /* Adjust margin for smaller screens */
+    }
 
+    .card {
+        width: 100%; /* Cards take full width */
+        max-width: 100%; /* Ensure cards take full width */
+    }
+}
+
+/* Media query for larger screens (tablets, desktops) */
+@media (min-width: 769px) {
+    section {
+        display: flex; /* Cards are displayed in a row */
+        justify-content: space-between; /* Evenly space the cards */
+    }
+
+    .card {
+        width: 45%; /* Cards take up 45% of the container */
+    }
+}
+
+/* For even larger screens (desktop) */
+@media (min-width: 1024px) {
+    section {
+        justify-content: space-between; /* Even more spaced out on larger screens */
+    }
+
+    .card {
+        width: 22%; /* Cards take up 22% of the container */
+    }
+}
 

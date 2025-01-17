@@ -7,3 +7,18 @@ div {
     padding: 20px;
      
 }
+@media (max-width:768px) {
+    dic {
+        border: 2px outset rgb(82, 79, 79);
+        padding: 5px;
+    }
+    .image {
+        border: 7px outset  rgb(235, 214, 126);
+        padding: 18px;
+    }
+    .image img {
+        width: 300px;
+        height: 200px;
+       padding: 10px;
+    }
+}

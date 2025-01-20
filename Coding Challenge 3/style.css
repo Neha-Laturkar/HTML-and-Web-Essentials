@@ -323,17 +323,17 @@ body, h1, h2, h3, h4, h5, h6  {
 }
 
 .contact-sitemap-logo {
-  max-width: 100%;
+  width: 100%;
   height: 500px;
   background-color: rgb(88, 86, 86);
   display: flex;
-  gap: 0px;
+  
 }
 .contactUs{
   display: block;
   padding: 5px;
-  width: 30%;
-  margin-left: 100px;
+  width: 40%;
+  margin-left: 90px;
 }
 
 .inputfields {
@@ -345,13 +345,15 @@ body, h1, h2, h3, h4, h5, h6  {
   padding: 10px 40px;
   margin-left: 5px;
   font-size: 15px;
+  background-color: #040404;
+  color: white;
 }
 
 input[type="text"], input[type="email"], textarea {
   width: 100%;
-  padding: 0.80rem;
-  border: 1px white solid;
-  background-color: rgb(127, 122, 122);
+  padding: 0.70rem;
+  border: 3px #040404 solid;
+  background-color: rgb(255, 255, 255);
   margin-top: 0;
   gap: 10px;
   
@@ -359,7 +361,7 @@ input[type="text"], input[type="email"], textarea {
 
 .siteMap{
   
-  padding: 40px;
+  padding: 40px 1px;
  
   justify-items: left;
   width: 30%;
@@ -409,11 +411,11 @@ input[type="text"], input[type="email"], textarea {
 
 
 .logo {
-  padding: 40px 10px;
- 
-  justify-items: center;
-  width: 35%;
-  margin-right: 5%;
+  padding: 20px 20px;
+  margin-top: 40px;
+  justify-items: left;
+  width: 60%;
+  
 }
 .circle-logo {
   border: 2px solid white;
@@ -424,6 +426,7 @@ input[type="text"], input[type="email"], textarea {
   color: black;
   justify-items: center;
   animation: cirLogo 3s infinite ease-out ;
+  margin-bottom: 30px;
 }
 
 @keyframes cirLogo {
@@ -445,15 +448,23 @@ input[type="text"], input[type="email"], textarea {
 
 .logo ul {
   list-style-type: none;
-  padding: 20px;
+  padding: 10px;
   
 }
 .logo li {
  
-  font-size: 16px;
+  font-size: 20px;
   color: aliceblue;
   padding: 10px;
-  text-align: center;
+  text-align: left;
+}
+.logo li i{
+  border: 2px solid white;
+  color: #040404;
+  background-color: white;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 20px;
 }
 
 

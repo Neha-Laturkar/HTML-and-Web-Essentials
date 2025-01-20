@@ -18,13 +18,13 @@ header h1 {
     color: #ffffff;
     margin-left: 25px;
     animation-delay: 5s;
-    animation: logo 7s infinite linear;
+    animation: logo 5s  linear;
     display: inline-block;
 }
 @keyframes logo{
     0%{
-        transform: rotateY(180deg);
-        opacity: 0;
+        transform: rotateY(0deg);
+        opacity: 1;
     }
     100%{
         transform: rotateY(360deg);

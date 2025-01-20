@@ -13,6 +13,7 @@ body, h1, h2, h3, h4, h5, h6  {
   .container1-withSlides .logo-main a{
     animation:  myMove 5s infinite;
   }
+
   @keyframes myMove{
     0% {
      transform: translateY(-100px);
@@ -33,13 +34,14 @@ body, h1, h2, h3, h4, h5, h6  {
     font-size: 20px;
     color: black;
     text-decoration: none;
-    margin: 10px ;
-    
-  }
+    margin: 10px 15px;
+}
+
   .container1-withSlides a h1 {
     padding: 10px 50px;
-    text-shadow: rgba(33, 31, 31, 0.395) 3px 3px ;
-    
+    text-shadow: rgba(33, 31, 31, 0.815) 3px 3px 7px;
+    text-indent: 60px;
+    letter-spacing: 10px;
   }
   .nav-elements ul {
     display: flex;
@@ -66,6 +68,8 @@ body, h1, h2, h3, h4, h5, h6  {
     margin-left: 500px;
     
  }
+
+
 
 
  * {box-sizing:border-box}
@@ -201,7 +205,7 @@ body, h1, h2, h3, h4, h5, h6  {
 }
 /* Hero container Animation */
 .hero-container img {
-  animation: zoomOut 3s ease-out forwards infinite ;
+  animation: zoomOut 6s ease-out forwards  ;
   animation-play-state: running;
 }
 @keyframes zoomOut {
@@ -266,12 +270,12 @@ body, h1, h2, h3, h4, h5, h6  {
   flex-direction: row;
   gap: 40px;
   padding: 20px 90px;
-  animation: cards-comeup 2s ease-out forwards infinite;
+  animation: cards-comeup 6s ease-out forwards infinite;
 }
 @keyframes cards-comeup {
   0% {
     transform: translateY(40px);
-    opacity: 0;
+    opacity: 0.5;
   }
   100% {
     transform: translateY(10px);
@@ -356,18 +360,20 @@ input[type="text"], input[type="email"], textarea {
 .siteMap{
   
   padding: 40px;
-  display: block;
+ 
   justify-items: left;
-  width: 20%;
-  margin-left: 12%;
+  width: 30%;
+  margin-left: 9%;
   margin-top: -35px;
+  
 }
 
 .list li {
   list-style-type: square;
   font-size: 17px;
   color: azure;
-  
+    letter-spacing: 10px;
+
 }
 .list ul{
   display: block;
@@ -380,19 +386,25 @@ input[type="text"], input[type="email"], textarea {
 }
 
 .list {
-  margin-right: 50px;
-  width: 200px;
+  margin-left: 0px;
+  width: 500px;
 
 }
 
  .contactUs h5, .siteMap h5 {
   font-size: 27px;
   color: white;
+  letter-spacing: 10px;
+  text-indent: 20px;
+  
+ 
 }
 .contactUs h6, .siteMap h6 {
   font-size: 16px;
   color: white;
   line-height: 0.1;
+  letter-spacing: 5px;
+  text-indent: 20px;
 }
 
 

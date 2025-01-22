@@ -1,0 +1,197 @@
+@font-face {
+    font-family: Roboto-Bold, sans-serif;
+    src: url(Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: Roboto-Thin, sans-serif;
+    src: url(Roboto-Thin.ttf);
+}
+@font-face {
+    font-family: Roboto-Italic, sans-serif;
+    src: url(Roboto-Italic.ttf);
+}
+@font-face {
+    font-family: Roboto-ThinItalic, sans-serif;
+    src: url(Roboto-ThinItalic.ttf);
+}
+
+body{
+    background-color: rgb(68, 68, 68);
+    margin: 0;
+   
+}
+.header-content{
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    width: 100%;
+    margin-top: -35px;
+    box-shadow: 0px 0px 10px 0px black;
+    
+}
+.logo h1{
+     text-indent: 95px;
+     position: relative;
+    top: 10px;
+    font-size: 45px;
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.514);
+    }
+.logo sub{
+    font-size: 16px;
+}
+
+/* Applied this css code when I encountered hovering effect wasn't working */
+nav {
+    position: relative;
+    z-index: 10;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-left: 555px;
+    margin-top: -60px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.686);
+    width: 635px;
+    height: 35px;
+    background-color: #acacac;
+}
+nav li{
+    float: left;
+    font-family: Roboto-Bold, sans-serif;
+    text-align: center;
+    padding: 6px 7px;
+}
+nav li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+   text-align: center;
+    padding: 5px 30px;
+}
+nav li:hover{
+    background-color: #eeeeee;
+   
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.686);
+}
+
+
+.social-icons{
+     float: right;
+    position: relative;
+     padding: 10px 0px;
+     bottom: 55px;
+     z-index: 10;
+}
+.social-icons a{
+    color: black;
+    font-size: 34px;
+    padding:  5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.359);
+    display: inline-block;
+    z-index: 5;
+}
+.social-icons a i{
+    display: inline-block;
+    z-index: 6;
+}
+
+.social-icons a i:hover{
+    color: blue;
+    transform: scale(1.2);
+}
+
+.container{
+   
+  width: 80%;
+  margin: 0 auto;
+  padding-left: 140px;
+    margin-top: -70px;
+}
+.first-fontline{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  
+  /* margin-left: 100px; */
+}
+.first-fontline h2{
+    font-size:  120px;
+    color: #a39d9d;
+    font-family: Roboto-Bold, sans-serif;
+    letter-spacing: 30px;
+}
+.first-fontline p{
+    color:#b0a5a5;
+    font-size: 20px;
+    margin-top: 180px;
+    font-family: Roboto-Italic, sans-serif;
+}
+.second-fontline{
+    padding: 0;
+    position: relative;
+    margin-top: -190px;
+}
+.second-fontline h3{
+    font-size: 110px;
+    color: rgb(229, 229, 229);
+    /* margin-left: 100px; */
+    font-family: Roboto-Bold, sans-serif;
+    letter-spacing: 28px;
+    word-spacing: 50px;
+    line-height: 1.4;
+}
+.third-fontline h4{
+    font-family: Roboto-ThinItalic, sans-serif;
+    font-weight: 100;
+    color: #898888;
+    font-size: 40px;
+    margin-top: -80px;
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    position: relative;
+   
+}
+h4{
+    font-family: Roboto-ThinItalic, sans-serif;
+    font-weight: 100;
+}
+
+.fourth-fontlineBlock{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 auto;
+    margin-top: -50px;
+    gap: 150px;
+}
+.h5font-block h5{
+    position: relative;
+    width: 140%;
+    color:  #d1c8c8;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border-right: 7px solid #d1c8c8;
+    padding: 10px 30px 0px 10px;
+    font-family: Roboto-Thin, sans-serif;
+    font-weight: 40;
+}
+.h6font-block {
+    font-size: 30px;
+    letter-spacing: 2px;
+    color:  #d1c8c8;
+    width: 40%;
+    position: relative;
+    padding-left: 0px;
+    
+    margin-left: 170px;
+   
+    margin-top: -25px;
+}
+.h6font-block h6{
+    font-size: 30px;
+    font-weight: 100;
+}

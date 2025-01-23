@@ -1,0 +1,312 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1c0439;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color:#525151;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.725);
+}
+.logo h1{
+   
+    text-indent: 20px;
+    margin-left: 10px;
+    display: block;
+    color: rgb(246, 243, 238);
+    text-shadow: 2px 2px 5px black;
+    letter-spacing: 5px;
+}
+
+nav li{
+    float: left;
+   list-style-type: none;
+}
+nav ul{
+    display: flex;
+    margin-top: 20px;
+    padding-left: 0px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.612);
+    margin-left: 130px;
+}
+nav  li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px 30px 10px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    
+}
+.social-links {
+    font-size: 25px;
+    padding-top: 20px ;
+    padding-right: 4px;
+    color: black;
+    
+}
+.social-links a i{
+    color: rgb(238, 234, 241);
+    padding: 7px;
+    text-shadow:  5px 5px 10px #0b0b0b;
+}
+ .social-links input{
+   
+   margin: 0px;
+   width: 230px !important;
+    border-radius: 14px;
+    border: 2px solid black;
+    font-size: 17px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.834);
+}
+nav ul li a:hover{
+    background-color: rgb(161, 156, 156);
+    color: white;
+}
+.social-links i:hover{
+   transform: scale(1.2);
+   transition: trasform 0.5s ease, color 0.5s ease;
+    color: rgb(129, 112, 241);
+}
+
+/* Before footer Contact-sitemap section css code */
+.contact-sitemap-logo {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(88, 86, 86);
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .contactUs{
+    width: 52%;
+    margin-left: 100px;
+  }
+  
+  .inputfields {
+    margin: 5px;
+    
+  }
+  .contactUs button {
+    width: 180px;
+    padding: 10px 40px;
+    margin-left: 5px;
+    font-size: 15px;
+    background-color: #040404;
+    color: white;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+  }
+  .contactUs button:hover {
+    background-color: #9ad1d5;
+    transform: scale(1.1);
+  }
+  
+  input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 0.70rem;
+    border: 3px #040404 solid;
+    background-color: rgb(255, 255, 255);
+    margin-top: 0;
+    gap: 10px;
+    
+  }
+  
+  .siteMap{
+    
+    padding: 40px 1px;
+   position: relative;
+    justify-items: left;
+    width: 30%;
+    margin-left: 14%;
+    margin-top: -35px;
+    
+  }
+  
+  .list li {
+    list-style-type: square;
+    font-size: 17px;
+    color: azure;
+      letter-spacing: 10px;
+  
+  }
+  .list ul{
+    display: block;
+    line-height: 2.5;
+    
+  }
+  
+  .list li:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  
+  .list {
+    margin-left: 0px;
+    width: 500px;
+  
+  }
+  
+   .contactUs h5, .siteMap h5 {
+    font-size: 27px;
+    color: white;
+    letter-spacing: 10px;
+    text-indent: 20px;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+  }
+  .contactUs h6, .siteMap h6 {
+    font-size: 16px;
+    color: white;
+    line-height: 0.1;
+    letter-spacing: 5px;
+    text-indent: 20px;
+    
+  }
+  
+  
+  .logo2 {
+    padding-top: 0px ;
+    padding-right: 10px;
+    margin-top: 40px;
+    justify-items: left;
+    width: 70%;
+    margin-right: 30px;
+    
+  }
+  .circle-logo {
+    border: 2px solid white;
+    height: 180px;
+    width: 180px;
+    border-radius: 90px;
+    background-color: white;
+    color: black;
+    justify-items: center;
+    animation: cirLogo 3s infinite ease-out ;
+    margin-bottom: 30px;
+  }
+  
+  
+  .logo2 .circle-logo h4 {
+    font-size: 45px;
+    
+  } 
+.logo2 ul {
+    list-style-type: none;
+    padding: 10px;
+    
+  }
+  .logo2 li {
+   
+    font-size: 20px;
+    color: aliceblue;
+    padding: 10px;
+    text-align: left;
+  }
+  .logo2 li i{
+    border: 2px solid white;
+    color: #040404;
+    background-color: white;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 20px;
+  }
+footer {
+    width: 100%;
+    height: 70px;
+    background-color: #1f1414;
+    color: white;
+    padding-top: 8px;
+  }
+  footer p {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  /* Image gallery CSS code */
+.main-container{
+    padding: 30px 40px;
+    height: 100%;
+    background-color: #1c0439;
+    text-align: center;
+}
+h2{
+    color: white;
+    font-size: 30px;
+    margin: 0 auto;
+    padding-bottom: 13px;
+}
+
+.image-gallery{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  width: 100%;
+  margin: auto;
+  height: 1200px;
+}
+.image-gallery div{
+    box-shadow: 2px 2px 15px rgb(0, 0, 0);
+}
+.image1{
+    background-image: url(images/image1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image2{
+    grid-column-start: 2;
+     grid-row-start: 1;
+    grid-row-end: 3;
+    
+        background-image: url(images/image3.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+.image3{
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-image: url(images/image10.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+.image4{
+    background-image: url(images/image2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.image5{
+    background-image: url(images/image4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.image6{
+    background-image: url(images/image5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.image7{
+    background-image: url(images/image8.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.image8{
+    background-image: url(images/image9.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.image9{
+    grid-row-start: 3;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-image: url(images/image7.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+

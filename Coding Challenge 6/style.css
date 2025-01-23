@@ -71,10 +71,10 @@ nav li a{
     font-size: 20px;
    text-align: center;
     padding: 5px 30px;
+    font-weight: 510;
 }
 nav li:hover{
     background-color: #eeeeee;
-   
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.686);
 }
 
@@ -87,7 +87,7 @@ nav li:hover{
      z-index: 10;
 }
 .social-icons a{
-    color: black;
+    color: rgba(0, 0, 0, 0.768);
     font-size: 34px;
     padding:  5px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.359);

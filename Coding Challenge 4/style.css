@@ -133,25 +133,32 @@ footer p {
 /* Contact-us page css */
 
 .contact-container {
+  position: absolute;
+  display: block;
+ 
     background-color: #fff;
     padding: 40px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.64);
-    max-width: 800px;
-    width: 100%;
-    margin: 50px auto;
+    box-shadow: 0 6px 40px rgba(0, 0, 0, 0.881);
+    width: 55%;
+    margin: -720px 20%;
+    
     height: 450px;
+    z-index: 1;
+  }
+  .contact-main{
+    opacity: 0.9;
   }
   
   .contact-container h1 {
    
-   
+    text-underline-offset: 4px;
     text-align: center;
     font-size: 24px;
-   
+    
     font-weight: bold;
     color: #333;
-  
+    word-spacing: 4px;
     
   }
   

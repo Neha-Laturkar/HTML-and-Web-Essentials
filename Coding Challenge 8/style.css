@@ -1,0 +1,240 @@
+
+
+/* ----------Header Section CSS ---------------------*/
+
+@font-face {
+    font-family: PlayfairDisplay-MediumItalic, serif;
+    src: url(PlayfairDisplay-MediumItalic.ttf);
+}
+@font-face {
+    font-family: PlayfairDisplay-SemiBoldItalic, serif;
+    src: url(PlayfairDisplay-SemiBoldItalic.ttf);
+}
+body{
+    margin: 0 auto;
+    padding: 0;
+    background-color: #e6edee;
+    
+}
+header {
+    background-image: url(images/hero-image.png);
+    opacity: 10;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    font-family: PlayfairDisplay-MediumItalic, serif;
+    padding-left: 90px;
+}
+#logo h1{
+    text-indent: 0px;
+    font-size: 40px;
+    color: rgb(174, 85, 13);
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.725);
+    letter-spacing: 3px;
+    margin-top: 50px;
+}
+#logo h1:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
+}
+.content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 250px;
+    justify-content: center;
+    align-items: center;
+    height:max-content;
+    gap: 10px;
+    line-height: 0.5;
+    margin-left: auto;
+    max-width: 100%;
+    padding-left: 20px;
+}
+.content h1{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 15px rgb(0, 0, 0);
+    letter-spacing: 3px;
+}
+.content p{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.793);
+    text-align: center;
+    margin-top: 10px;
+}
+.content button{
+    background-color: rgba(188, 92, 13, 0.768);
+    color: white;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.493);
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+.content button:hover{
+    background-color: #4f1b1d;
+    color: white;
+    transition: background-color 0.5s ease-in-out;
+}
+
+
+/* ------------------Nav Section--------------------- */
+.nav{
+   position: sticky;
+   height: 20%;
+} 
+li{
+    display: inline;
+    list-style-type: none;
+    margin: 0 10px;
+}
+ul{
+    position: relative;
+   padding: 30px 0px;
+}
+.nav a{
+    text-underline-offset: 2px;
+    color: rgb(244, 140, 55);
+    font-size: 16px;
+    font-weight: bold;
+    font-family: PlayfairDisplay-MediumItalic, serif;
+    letter-spacing: 1px;
+    position: sticky;
+}
+.nav a:hover{
+    color: #4f1b1d;
+}
+/* ------------------Footer Section--------------------- */
+footer{
+    background-color: rgba(174, 85, 13, 0.749);
+    display: block;
+}
+footer p{
+    text-align: center;
+    font-size: 15px;
+    font-family: PlayfairDisplay-MediumItalic, serif;
+    padding: 20px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+/* ------------------4 Contents section-Service section--------------------- */
+
+#Services-section{
+    display: grid;
+   grid-template-columns: auto auto auto auto;  
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+}
+.service{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    
+}
+.service img{
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 2px 7px 5px rgba(0, 0, 0, 0.749);
+}
+.service h2{
+    font-size: 27px;
+    line-height: 1.2;
+}
+.service p{
+    font-size: 18px;
+    line-height: 1.4;
+}
+/*  --------------Products and serices paragraph-------------*/
+#products-paragraph {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 130px;
+}
+#products-paragraph p{
+    font-family: PlayfairDisplay-SemiBoldItalic, serif;
+    font-size: large;
+    line-height: 1.5;
+    padding: 0px 20px;
+}
+#products-paragraph h2{
+    font-family: PlayfairDisplay-SemiBoldItalic, serif;
+    font-size: 40px;
+    color: #4f1b1d;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.678);
+    letter-spacing: 3px;
+    margin-top: 20px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+/* ------------------Image-Gallery----------------- */
+#gallery{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+}
+#gallery img{
+    object-fit: cover;
+    box-shadow: 2px 7px 5px rgba(0, 0, 0, 0.749);
+}
+/* -------------------Awesome product------------------ */
+h3{
+    padding-top: 140px;
+    font-family: PlayfairDisplay-SemiBoldItalic, serif;
+    text-align: center;
+    font-size: 40px;
+    color: #4f1b1d;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.678);
+    letter-spacing: 5px;
+    word-spacing: 3px;
+    margin-top: 20px;
+    
+}
+h4{
+    font-family: PlayfairDisplay-SemiBoldItalic, serif;
+    text-align: center;
+    font-size: 30px;
+    color: #4f1b1d;
+   padding-top: 5%;
+   margin-bottom: -5px;
+}
+#awesome-product{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    margin: 0px;
+    gap: 30px;
+}
+.left-sideblock, .right-sideblock{
+    display: inline;
+    padding-bottom: 80px 20px;
+}
+.image-block{
+  box-shadow: 4px 7px 5px rgba(0, 0, 0, 0.821);
+}
+
+/* -------------------------Client Reviews----------------- */
+#reviews{
+    display: flex;
+    padding: 50px;
+}

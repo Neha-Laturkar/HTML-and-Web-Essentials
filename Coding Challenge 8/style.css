@@ -1,5 +1,6 @@
-
-
+html {
+    scroll-behavior: smooth;
+}
 /* ----------Header Section CSS ---------------------*/
 
 @font-face {
@@ -10,11 +11,12 @@
     font-family: PlayfairDisplay-SemiBoldItalic, serif;
     src: url(PlayfairDisplay-SemiBoldItalic.ttf);
 }
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 body{
     margin: 0 auto;
     padding: 0;
-    background-color: #e6edee;
-    
+    background-color: #deeaec;
+    font-family: PlayfairDisplay-MediumItalic, serif;
 }
 header {
     background-image: url(images/hero-image.png);
@@ -22,18 +24,24 @@ header {
     background-size: cover;
     background-position: center;
     height: 70vh;
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     font-family: PlayfairDisplay-MediumItalic, serif;
-    padding-left: 90px;
+    max-width: 100%;
 }
 #logo h1{
+    display: block;
+    position: relative;
     text-indent: 0px;
     font-size: 40px;
     color: rgb(174, 85, 13);
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.725);
-    letter-spacing: 3px;
-    margin-top: 50px;
+    letter-spacing: 5px;
+    margin-top:-200px;
+    width: auto;
 }
 #logo h1:hover{
     transform: scale(1.2);
@@ -43,21 +51,33 @@ header {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-top: 250px;
+    margin-top: 250px ;
+    margin-right: 10%;
     justify-content: center;
     align-items: center;
     height:max-content;
     gap: 10px;
     line-height: 0.5;
-    margin-left: auto;
     max-width: 100%;
-    padding-left: 20px;
+    animation: come-from-top 4s ease-in-out infinite;
 }
+@keyframes come-from-top {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .content h1{
     font-size: 30px;
     color: rgb(255, 255, 255);
     text-shadow: 5px 5px 15px rgb(0, 0, 0);
-    letter-spacing: 3px;
+    letter-spacing: 10px;
+    font-family: "Lobster", serif;
 }
 .content p{
     font-size: 25px;
@@ -85,26 +105,34 @@ header {
 
 /* ------------------Nav Section--------------------- */
 .nav{
-   position: sticky;
-   height: 20%;
+    position: fixed;
+   
+    z-index: 1000; /* Ensures the nav stays above other content */
+    
+   margin-bottom: 25%;
+   margin-left: 60%;
+    
+    height: 20%;
 } 
-li{
+.nav li{
     display: inline;
-    list-style-type: none;
+    list-style-type: none !important;
     margin: 0 10px;
+
 }
 ul{
     position: relative;
    padding: 30px 0px;
+   margin-top: 00px;
 }
 .nav a{
     text-underline-offset: 2px;
-    color: rgb(244, 140, 55);
+    color: rgb(165, 64, 24);
     font-size: 16px;
     font-weight: bold;
     font-family: PlayfairDisplay-MediumItalic, serif;
     letter-spacing: 1px;
-    position: sticky;
+ 
 }
 .nav a:hover{
     color: #4f1b1d;
@@ -142,17 +170,38 @@ footer p{
     justify-content: center;
     align-items: center;
     padding: 20px 40px;
+    animation: bounce-effect 4s infinite alternate ;
     
+}
+@keyframes bounce-effect {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-15px);
+        opacity: 0.9;
+    }
+    100% {
+        transform: translateY(-30px);
+        opacity: 1;
+    }
 }
 .service img{
     object-fit: cover;
     border-radius: 50%;
     box-shadow: 2px 7px 5px rgba(0, 0, 0, 0.749);
 }
+.service img:hover{
+    transform: scale(1.2);
+    transition: transform 0.4s ease-in-out;
+}
 .service h2{
     font-size: 27px;
     line-height: 1.2;
 }
+
+
 .service p{
     font-size: 18px;
     line-height: 1.4;
@@ -175,11 +224,19 @@ footer p{
     font-size: 40px;
     color: #4f1b1d;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.678);
-    letter-spacing: 3px;
+    letter-spacing: 13px;
     margin-top: 20px;
     text-decoration: underline;
     text-underline-offset: 5px;
+    animation: word-stretch 4s infinite 2s alternate;
 }
+@keyframes word-stretch {
+    0% {
+        letter-spacing: 0px;
+    }
+    100% {
+        letter-spacing: 15px;
+    }}
 /* ------------------Image-Gallery----------------- */
 #gallery{
     display: grid;
@@ -193,7 +250,13 @@ footer p{
 }
 #gallery img{
     object-fit: cover;
+    padding: 10px;
+    border: 10px inset rgb(0, 0, 0);
     box-shadow: 2px 7px 5px rgba(0, 0, 0, 0.749);
+}
+#gallery img:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
 }
 /* -------------------Awesome product------------------ */
 h3{
@@ -203,7 +266,7 @@ h3{
     font-size: 40px;
     color: #4f1b1d;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.678);
-    letter-spacing: 5px;
+    letter-spacing: 10px;
     word-spacing: 3px;
     margin-top: 20px;
     
@@ -230,11 +293,349 @@ h4{
     padding-bottom: 80px 20px;
 }
 .image-block{
+    padding: 10px;
+    border: 10px inset rgb(0, 0, 0);
+    box-shadow: 2px 7px 5px rgba(0, 0, 0, 0.749);
   box-shadow: 4px 7px 5px rgba(0, 0, 0, 0.821);
+  animation: flip-image 5s ease-in-out infinite normal forwards;
+ 
+  
+}
+@keyframes flip-image {
+    0% {
+        transform: rotateY(180deg);  /* Starting position */
+    }
+    40% {
+        transform: rotateY(360deg);  /* Flip completed at 40% */
+    }
+    100% {
+        transform: rotateY(360deg);  /* Keep the final position until the next iteration */
+    }
 }
 
+#testimonial{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    padding: 120px 130px 0px;
+}
+#testimonial  h2{
+    letter-spacing: 15px;
+    font-size: 40px;
+    color: #4f1b1d;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.678);
+    margin-bottom: 20px;
+
+}
 /* -------------------------Client Reviews----------------- */
-#reviews{
+#reviews-section{
     display: flex;
-    padding: 50px;
+    padding: 50px 70px;
+    gap: 20px 40px;
+}
+
+.review img{
+    float: left;
+    border-radius: 50%;
+    padding-right: 13px;
+}
+.review{
+    display: block;
+    padding: 30px;
+    line-height: 1.6;
+    border: 2px solid black;
+    background-color: white;
+    animation: review-animation 4s ease-in-out ;
+}
+@keyframes review-animation {
+    0% {
+        transform: perspective(1000px) rotate3d(0, 1, 0, 0deg);
+        opacity: 1;
+    }
+    
+    100% {
+        transform: perspective(1000px) rotate3d(0, 1, 0, 360deg);
+        opacity: 1;}
+    }
+
+.review h5{
+    font-size: 30px;
+    color: #4f1b1d;
+    font-family: PlayfairDisplay-SemiBoldItalic, serif;
+    letter-spacing: 2px;
+    margin-top: 30px;
+   
+}
+.review p{
+    font-size: 15px;
+    font-weight: 700;
+    color: #4f1b1d;
+    font-family: PlayfairDisplay-SemiBoldItalic, serif;
+    position: relative;
+    padding: 0px 10px;
+    line-height: 1.6;
+    margin-top: -30px;
+    text-align: justify;
+}
+
+/* ---------------- Contact -sitemap- logo section------------------- -- */
+
+#contact-sitemap-logo{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color:rgb(251, 234, 138);
+    padding: 0px 40px;
+}
+.blocks{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding: 20px 50px;
+    margin: 10px ;
+}
+.blocks h6{
+    font-size: 25px;
+    color: #4f1b1d;
+    font-family: PlayfairDisplay-SemiBoldItalic, serif;
+    letter-spacing: 5px;
+    margin-bottom: 7px;
+    word-spacing: 3px;
+}
+.blocks p{
+    font-size: 15px;
+    color: #4f1b1d;
+    font-family: PlayfairDisplay-SemiBoldItalic, serif;
+    letter-spacing: 7px;
+    line-height: 1.6;
+    font-weight: bolder;
+}
+.blocks input, .blocks textarea, .blocks email{
+    padding: 10px;
+    margin: 3px;
+    border: 2px solid black;
+    width: 60%;
+}
+.blocks button{
+    background-color: rgba(188, 92, 13, 0.768);
+    color: white;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.493);
+    cursor: pointer;
+    width: 40%;
+    margin-top: 10px;
+}
+.blocks button:hover{
+    background-color: #682525;
+    color: white;
+    transition: background-color 0.5s ease-in-out;
+}
+#contact-lists li{
+    list-style-type: disc !important;
+}
+#contact-lists li a{
+    line-height: 2;
+    font-size: 23px;
+    font-weight: 750;
+    color: rgb(253, 131, 17);
+    letter-spacing: 6px;
+    
+}
+#contact-lists li a:hover{
+    color: #4f1b1d;
+}
+#contact-lists{
+    display: block;
+    padding: 20px 20px;
+    margin-top: -20px;
+}
+
+.logo2 {
+    display: block;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background-color: white;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 40px;
+    border: dotted 3px rgb(207, 91, 18);
+    box-shadow: #4f1b1d 2px 7px 5px;
+    animation: circle-cycle  6s infinite ;
+}
+@keyframes circle-cycle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.logo2 h1{
+    color: #622601;
+    margin-top:  40%;
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-style: italic;
+    text-shadow: #4f1b1dbf 2px 5px 5px;
+}
+.blocks li{
+    list-style-type: none !important;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 2.5;
+    color: rgb(176, 81, 2);
+}
+.blocks i{
+    background-color: rgba(123, 56, 56, 0.786);
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+}
+.blocks i:hover{
+    background-color: #4f1b1d;
+    transform: scale(1.1);
+    transition: background-color 0.5s ease-in-out;
+}
+.contact-info{
+    display: block;
+    position: relative;
+    margin-top: -20px;
+    margin-left: 50px;
+    padding: 0px;
+}
+
+/* Mobile responsive codr */
+@media screen and (max-width: 768px) {
+    #Services-section {
+        grid-template-columns: 1fr; /* Two columns on small screens */
+        padding-top: 0px;
+    }
+   
+    header{
+        height: 50vh;
+        justify-content: center;
+        align-items: center;
+        
+        display: inline;
+    }
+    #logo h1{
+        margin-top: 90px;
+        justify-content: center;
+        align-items: center;
+   }
+   .content{
+       margin-top: 30px;
+         margin-right: 0px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            line-height: 0.5;
+            max-width: 100%;
+            font-size: medium;
+   }
+   .content h1{
+       font-size: 20px;
+       letter-spacing: 0px;
+   }
+   .content p{
+       font-size: 15px;
+       letter-spacing: 0px;
+   }    
+   .nav{
+       margin-left: 0px;
+       padding: 0px;
+       margin-top: -70%;
+   }
+   #products-paragraph{
+         padding: 0px 20px;
+   }
+   #products-paragraph h2{
+       font-size: 20px;
+       letter-spacing: 0px;
+   }
+    #products-paragraph p{
+         font-size: 15px;
+         letter-spacing: 0px;
+    }
+    #gallery{
+        grid-template-columns: auto;
+        padding: 0px 20px;
+    }
+    #gallery img{
+        padding: 5px;
+    }
+    h3{
+        padding-top: 30px;
+        font-size: 23px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+     #awesome-product{
+         grid-template-columns: auto;
+         padding: 0px 10px;
+         margin-top: -10%;
+     }
+        .left-sideblock, .right-sideblock{
+            padding:10px 10px;
+        }
+        .image-block{
+            padding: 5px 10px;
+            width: auto;
+        }
+        .image-block img{
+            padding: 5px 10px;
+            width: auto;
+        }
+        #awesome-product h4{
+            font-size: 20px;
+        }
+        #awesome-product p{
+            font-size: 15px;
+            padding: 10px 50px;
+        }
+        #awesome-product img{
+            padding: 15px 10px;
+            width: auto;
+        }
+        #testimonial{
+            padding: 20px 10px;
+        }
+        #testimonial h2{
+            font-size: 20px;
+            letter-spacing: 0px;
+        }
+        #testimonial p{
+            font-size: 15px;
+            letter-spacing: 0px;
+        }
+        #reviews-section{
+            padding: 20px 5px;
+            display: flex;
+            flex-direction: column;
+       }
+       #contact-sitemap-logo{
+           grid-template-columns: auto;
+           padding: 0px 10px;
+       }
+         .blocks{
+              padding: 10px 10px;
+         }
+         .contact-info{
+             margin-left: 0px;
+         }
+         .contact-info li{
+                font-size: 17px;
+                letter-spacing: 0px;
+         }
+       
+
+        
+       
+        
+    
 }

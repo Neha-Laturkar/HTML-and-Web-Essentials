@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Challenge 8: CSS Framework</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Header section with hero -->
@@ -22,7 +23,7 @@
             <ul>
                 <li><a href="#logo">Home</a></li>
                 <li><a href="#Services-section">Services</a></li>
-                <li><a href="#products">Products</a></li>
+                <li><a href="#gallery">Products</a></li>
                 <li><a href="#testimonial">Testimonial</a></li>
                 <li><a href="#contact-sitemap-logo">Contact</a></li>
             </ul>
@@ -60,8 +61,8 @@
         <span class="service">
             <img src="images/image4.png" width="80px" alt="">
             <h2>Customized Art Creations</h2>
-            <p>Get personalized art tailored to your vision. 
-            From digital sketches to oil masterpieces, 
+            <p>Get personalized art, photos and idea's tailored to your vision. 
+            From digital sketches, watercolor paintings to oil masterpieces, 
             bring your unique ideas to life.</p>
         </span>
     </div>
@@ -173,28 +174,28 @@
          </section>
 
          <!-- ----------------Client reviews section-------------------- -->
-          <section id="reviews">
+          <section id="reviews-section">
 
-            <div class="service">
-                <img src="images/image12.png" alt="">
-                <h3>Emily Carter</h3>
+            <div class="review">
+                <img src="images/image12.png" width="95px" height="95px" alt="">
+                <h5>Emily Carter</h5>
                 <p>"ArtEcho’s work is absolutely breathtaking! The digital painting I 
                     purchased captures such intricate details and vibrant colors—it’s 
                     now the centerpiece of my living room. Highly recommend!"</p>
             </div>
 
-            <div class="service">
-                <img src="images/image13.png" alt="">
-                <h3>Sophia Bennett</h3>
+            <div class="review">
+                <img src="images/image13.png" width="97px" height="100px" alt="">
+                <h5>Sophia Bennett</h5>
                 <p>"I commissioned a custom oil painting, and the 
                     result was beyond my expectations. The quality and emotion 
                     in the artwork are unmatched. It’s truly a masterpiece that 
                     I’ll treasure forever."</p>
             </div>
 
-            <div class="service">
-                <img src="images/image14.png" alt="">
-                <h3> Michael Reed</h3>
+            <div class="review">
+                <img src="images/image14.png" width="95px" height="95px" alt="">
+                <h5> Michael Reed</h5>
                 <p>"I commissioned a custom oil painting, and the result was beyond my 
                     expectations. The quality and emotion in the artwork are unmatched. 
                     It’s truly a masterpiece that I’ll treasure forever."</p>
@@ -206,18 +207,32 @@
     <section id="contact-sitemap-logo">
         
         <div class="blocks">
-           
-        
+           <h6>CONTACT US</h6>
+           <P>SEND US A MESSAGE</P>
+              <input type="text" placeholder="Full Name" required>
+              <input type="email" placeholder="Your Email" required>
+              <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+              <button>SUBMIT</button>
         </div>
 
         <div class="blocks">
-
-
+            <h6>SITE MAP</h6>
+            <p>ALL OUR PAGES</p>
+                <ul id="contact-lists">
+                <li><a href="#logo">Home</a></li>
+                <li><a href="#Services-section">Services</a></li>
+                <li><a href="#gallery">Products</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
+                <li><a href="#contact-sitemap-logo">Contact</a></ul>
+            </ul>
         </div>
 
         <div class="blocks">
-
-            
+            <div class="logo2"><h1>ArtEcho</h1></div>
+            <ul class="contact-info">
+                <li><i class="fa-solid fa-phone"></i> 0123456789</li>
+                <li><i class="fa-regular fa-envelope"></i> cuctomercare@companyname.com</li>
+            </ul>
         </div>
 
     </section>

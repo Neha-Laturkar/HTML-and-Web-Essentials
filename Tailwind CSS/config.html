@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .text-clifford {
+            --color-clifford: #da373d;
+            color: var(--color-clifford);
+          }
+          .bg-mint{
+            --bg-mint:#7FFFD4;
+            background-color: var(--bg-mint);
+          }
+        }
+      </style>
+</head>
+<body>
+
+    <header class="p-4 bg-emerald-400 flex">
+        <div>
+        <nav class="p-4  ">
+            <a href="#home"class="m-1  p-1 border text-emerald-900 bg-emerald-200">HOME</a>
+            <a href="#gallery"class="m-1 p-1 border text-emerald-900 bg-emerald-200">GALLERY</a>
+            <a href="#about"class="m-1 p-1 border text-emerald-900 bg-emerald-200">ABOUT</a>
+            <a href="#contact"class="m-1 p-1 border text-emerald-900 bg-emerald-200">CONTACT</a>
+                
+        </nav>
+        <p class="m-2">&copy; Neha Sutar ltd.</p>
+        <p>4 Roseville Close <br>
+            Norwich, UK<br>
+            NR1 1UX
+        </p>
+        <p>brought to you by TailwindCSS</p></div>
+    </header>
+    <!-- <h1 class="text-3xl text-clifford bg-mint p-2">Hello World !!</h1> -->
+    <div class="h-screen flex justify-center items-center 
+                border bg-[url('image10.png')] bg-cover ">
+
+        <div class="text-center w-100 h-70 border-5 border-emerald-900 p-2
+        inset-shadow-sm inset-shadow-indigo-500" >
+
+            <h1 class="text-4xl underline underline-offset-4 mt-4" >Tailwind</h1>
+
+            <div class="m-2" >
+            <p>Tailwind is an awesome framework for CSS that uses utility classes to make the  
+            process of styling way easier.</p>
+            <p>You can use tailwind yourself just click the link below</p>
+        </div>
+            <a href="https://tailwindcss.com" class="font-bold text-emerald-900 border-3 border-black-400
+            p-1 mt-3  hover:bg-yellow-300 scale-150 text-xl
+            shadow-lg shadow-blue-500/100">Tailwind Website</a>
+        </div> 
+     </div>
+   
+</body>
+</html>

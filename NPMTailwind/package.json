@@ -1,0 +1,19 @@
+{
+
+  
+  "name": "npmtailwind",
+  "version": "1.0.0",
+  "description": "A project using Tailwind CSS",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/styles/tailwind.css -o ./dist/output.css --watch"
+  },
+  "dependencies": {
+    "tailwindcss": "^4.0.0",
+    "postcss": "^8.4.4",
+    "autoprefixer": "^10.4.1"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
+}

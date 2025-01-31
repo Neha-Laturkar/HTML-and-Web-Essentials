@@ -1,0 +1,325 @@
+
+body{
+   margin: 0;
+   padding: 0;
+   font-family: "Montserrat", serif;
+}
+
+header {
+    position: relative; 
+    background-color: #e8f3bc;
+    background-image: url(images/image15.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header::before {
+    content: ''; /* Needed for the pseudo-element */
+    position: absolute;
+    background-image: url(images/image15.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3; /* Adjust this value to control the opacity */
+    z-index: -1;
+}
+
+
+.header-oneblock{
+    display: flex;
+    font-family: "Montserrat", serif;
+    padding: 30px;
+    gap: 27%;
+}
+.main-heading{
+    display: flex;
+    gap: 40px;
+}
+header img, .ph-email img{
+    width: 6rem;
+    border-radius: 50%;
+    box-shadow: 3px 3px 9px rgb(41, 40, 40);
+}
+header i{
+    font-size: 2.9rem;
+    font-weight: 200;
+    padding: 20px;
+}
+header i:hover{
+    transform: scale(1.2);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+/* 
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+   
+  }
+  
+  .topnav #myLinks {
+    display: none;
+   
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 35px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  } */
+
+ h1{
+    font-size: 35px;
+    font-weight: 650;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 5px rgba(52, 51, 51, 0.852);
+}
+.header-twoblock{
+    display: flex;
+    padding: 40px 60px;
+}
+.callToAction{
+    padding: 0px 50px;
+}
+ p{
+    font-size: 20px;
+    font-weight: 450;
+    line-height: 1.6;
+}
+button{
+    font-size: 17px;
+    padding: 15px 25px;
+    border: 3px solid black;
+    border-radius: 25px;
+    background-color: rgb(253, 176, 32);
+    box-shadow: 7px 7px 7px gray;
+    margin-top: 20px;
+}
+ button:hover{
+    background-color: rgb(155, 251, 246);
+    transition:  background-color 0.5s ease-in-out;
+}
+button:focus, a:focus {
+    outline: 2px solid #FF4500; /* High contrast outline */
+}
+/* ----------------------------Advantages section--------------------------- */
+.advantages-block{
+    display: block;
+    background-color: #fafae3;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 30px;
+ }
+.block-one{
+    align-items: center;
+    text-align: center;
+    padding: 20px 120px;
+    line-height: 1.6;
+}
+.block-two img{
+    width: 450px;
+    height: 300px;
+    border: 3px solid black;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.732);
+}
+.block-two{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafae3;
+    gap: 20px;
+}
+/* -------------------------Personalized Learning Plans for Every Student------------------------ */
+
+.plans-block{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-height: 50%;
+    background-color: rgba(223, 213, 23, 0.478);
+    padding: 30px 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.plan1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-radius: 15px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.748);
+}
+.plan4{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+}
+.plan{
+    padding: 20px  30px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.748);
+}
+.plans-block img{
+   width: 45vw;
+   height: 80%;
+   box-shadow: 3px 3px 10px rgb(31, 31, 31);
+}
+.plan h2{
+    font-weight: 550;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.plan p{
+    font-size: 17px;
+}
+/* -----------------------------------features------------------------ */
+
+.subjects{
+    box-shadow: 3px 3px 10px rgb(0, 0, 0);
+    height: 200px;
+}
+#features{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 30px 50px;
+    gap: 15px;
+    background-image: url(images/image14.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+ .video-frame{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+ }
+ .text-block{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding-bottom: 80px ;
+    text-align: center;
+    background-color: rgba(144, 238, 144, 0.5);
+ }
+ .block2{
+    background-image: url(images/image5.png);
+    background-size: cover;
+ }
+ .block3{
+    background-image: url(images/image6.png);
+    background-size: cover;
+ }
+ .block3{
+    background-image: url(images/image7.png);
+    background-size: cover;
+ }
+ .block4{
+    background-image: url(images/image8.png);
+    background-size: cover;
+ }
+ .block5{
+    background-image: url(images/image9.png);
+    background-size: cover;
+ }
+ .block6{
+    background-image: url(images/image11.png);
+    background-size: cover;
+ }
+ .block7{
+    background-image: url(images/image12.png);
+    background-size: cover;
+ }
+ .text-block h2{
+    letter-spacing: 2px;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    font-weight: 700;
+    font-size: 30px;
+}
+.text-block p{
+    font-size: 18px;
+    padding: 10px;
+    font-weight: 500;
+}
+/* ------------------------------------Footer------------------------------------ */
+footer{
+    display: flex;
+    gap: 30px;
+    padding: 50px 70px;
+   max-width: 100%;
+   justify-content: center;
+   background-image: url(images/image.png);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: left;
+    background-color: rgba(205, 253, 170, 0.621);
+    border-radius: 20px;
+}
+#contact-form h2, .social-links h2{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    letter-spacing: 3px;
+}
+input, textarea{
+    padding: 5px 10px;
+    margin-bottom: 10px ;
+    width: 400px;
+}
+.social-links{
+    justify-content: left;
+    display: block;
+    margin-top: -10px;
+    width: 300px;
+    line-height: 3;
+    padding-left: 30px;
+    
+}
+a, li{
+    color: black;
+    list-style-type: none;
+    line-height: 2;
+    text-align: left;
+    list-style-type: square;
+    font-size: 20px;
+    font-weight: 500;
+}
+a:hover, .ph-email p:hover{
+    color: blue;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.652);
+}
+.ph-email p{
+    font-weight: 500;
+    letter-spacing: 2px;
+   text-decoration: underline;
+   margin-top: 25px;
+   font-weight: 650;
+}
+.footer-2{
+    padding: 10px;
+    background-color: rgb(55, 55, 55);
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    justify-content: center;
+}
+.footer-2 p{
+    font-size: 15px;
+}
+

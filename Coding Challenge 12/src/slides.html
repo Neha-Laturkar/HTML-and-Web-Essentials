@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Products</title>
+    <style>
+        .mySlides2 {
+            display: none; /* Hide all slides by default */
+            text-align: center;
+            border: 2px solid black;
+            max-width: 50%;
+            max-height: 60%;
+            
+        }
+        .products-images {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Adds spacing between the slides */
+            height: fit-content;
+            padding: 4rem;
+        }
+        .nav-elements {
+            margin-top: 20px;
+           display: flex;
+           justify-content: space-between;
+           margin-top: -23rem;
+          padding: 5px;
+          
+        }
+        .nav-elements button{
+            background-color: rgba(0, 0, 0, 0.767);
+            color: white;
+            font-size: 2rem;
+        }
+        .products {
+            margin-top: 10px;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <div class="featured-products">
+        <h1 class="text-5xl text-center mt-4">FEATURED PRODUCTS</h1>
+
+        <div class="products-images">
+            <!-- Slide 1 -->
+            <div class="mySlides2">
+                <div class="image"><img src="images/pr1.png" style="width:100%"></div>
+                <div class="products">
+                    <h2 class="text-black text-3xl">Appetizers/Starters</h2>
+                    <p class="text-black">&pound;200</p>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="mySlides2">
+                <div class="image"><img src="images/pr2.png" style="width:100%"></div>
+                <div class="products">
+                    <h2 class="text-amber-50 text-3xl">Main Courses</h2>
+                    <p class="text-amber-50">&pound;500</p>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="mySlides2">
+                <div class="image"><img src="images/pr3.png" style="width:100%; height:80%;" ></div>
+                <div class="products">
+                    <h2 class="text-amber-50 text-3xl">Main Courses</h2>
+                    <p class="text-amber-50">&pound;500</p>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="mySlides2">
+               <div class="image"> <img src="images/pr4.png" style="width:100%"></div>
+                <div class="products">
+                    <h2 class="text-amber-50 text-3xl">Main Courses</h2>
+                    <p class="text-amber-50">&pound;500</p>
+                </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="mySlides2">
+                <div class="image"><img src="images/pr5.png" style="width:100%"></div>
+                <div class="products">
+                    <h2 class="text-amber-50 text-3xl">Main Courses</h2>
+                    <p class="text-amber-50">&pound;500</p>
+                </div>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="mySlides2">
+                <div class="image"><img src="images/pr6.png" style="width:100%"></div>
+                <div class="products">
+                    <h2 class="text-amber-50 text-3xl">Main Courses</h2>
+                    <p class="text-amber-50">&pound;500</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="nav-elements flex justify-between">
+            <button onclick="plusDivs(-1)">&#10094;</button>
+            <button  onclick="plusDivs(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <script>
+        var slideIndex2 = 0; // Start at the first pair of slides
+        var slidesToShow = 2; // Number of slides to show at once
+        showDivs1(slideIndex2);
+
+        function plusDivs(m) {
+            slideIndex2 += m * slidesToShow;
+            showDivs1(slideIndex2);
+        }
+
+        function showDivs1(n) {
+            var y = document.getElementsByClassName("mySlides2");
+            var totalSlides = y.length;
+
+            // Handle wrap-around logic
+            if (n >= totalSlides) { slideIndex2 = 0; }
+            if (n < 0) { slideIndex2 = totalSlides - slidesToShow; }
+
+            // Hide all slides
+            for (var j = 0; j < totalSlides; j++) {
+                y[j].style.display = "none";
+            }
+
+            // Show the next two slides
+            for (var k = 0; k < slidesToShow; k++) {
+                var currentIndex = (slideIndex2 + k) % totalSlides;
+                y[currentIndex].style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

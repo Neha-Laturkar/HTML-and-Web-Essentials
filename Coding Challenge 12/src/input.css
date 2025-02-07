@@ -1,0 +1,209 @@
+@import "tailwindcss";
+
+body{
+    color: darkgreen;
+    background-color: rgb(245, 246, 247);
+}
+header{
+    display: flex;
+    gap: 0rem;
+    padding-top: 1.6rem;
+    background-color: rgb(245, 246, 247);
+}
+
+nav ul{
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    margin-left: 5rem;
+}
+nav a{
+    padding-right: 1.5em;
+}
+nav a:hover{
+    text-decoration: underline;
+    color: darkgreen;
+    font-weight: 500;
+    transition: transform 0.4s ease-in-out;
+}
+header i{
+    font-size: 1.5rem;
+    padding: 0.3rem;
+}
+header .material-symbols-outlined{
+    font-size: 1.5rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 5px 5px;
+}
+header .material-symbols-outlined:hover{
+    transform: scale(1.2);
+    background-color: rgb(107, 244, 237);
+    transition: transform 0.3s ease-in;
+}
+.container{
+    background-color: rgb(245, 246, 247);
+    max-width: max-content;
+}
+/* ----------------------------services container---------------------------- */
+.container-two{
+    display: block;
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+ }
+ .container-two img{
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.673);
+    height: 25rem;
+ }
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    overflow: hidden;
+}
+
+.container-two:hover .overlay {
+    opacity: 4;
+    overflow: hidden;
+    background-color: rgba(38, 112, 97, 0.686);
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.slideshow-controls {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.slideshow-controls button {
+    background-color: #359932;
+    border: none;
+    padding: 10px 20px;
+    margin: 0px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    color: white;
+}
+/* --------------------------------------------Featured products 2 images slides------------------- */
+.mySlides2 {
+    display: none; /* Hide all slides by default */
+    text-align: center;
+    border: 2px solid black;
+    max-width: 50%;
+    max-height: 60%;
+    
+}
+.products-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adds spacing between the slides */
+    height: fit-content;
+    padding: 4rem;
+}
+.nav-elements {
+    margin-top: 20px;
+   display: flex;
+   justify-content: space-between;
+   margin-top: -23rem;
+  padding: 5px;
+  
+}
+.nav-elements button{
+    background-color: rgba(0, 0, 0, 0.595);
+    color: white;
+    font-size: 3rem;
+    padding-right: 0.6rem;
+    padding-left: 0.6rem;
+}
+.products {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+/* -----------------------------5 images--------------------------------------- */
+.imagediv{
+    border: 3px solid rgb(106, 105, 105);
+    box-shadow: 3px 3px 10px black;
+    background-image: url(images/fd1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 43rem;
+    width: 40rem;
+}
+.foodimage{
+    height: 18rem;
+    width: 24rem;
+    border: 3px solid rgb(106, 105, 105);
+    box-shadow: 3px 3px 10px black;
+    cursor: grab;
+}
+.food-price{
+    height: min-content;
+    margin-top: 0rem;
+}
+.d1{
+    background-image: url(images/fd2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.d2{
+    background-image: url(images/fd3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.d3{
+    background-image: url(images/fd4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.d4{
+    background-image: url(images/fd5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* ------------------------------------logo-social links----------------------------------------- */
+.logo {
+    text-align: center;
+    padding: 2.5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    background-color: white;
+    color: #33932f;
+    border-radius: 50%;
+    width: 17rem;
+    box-shadow: 3px 3px 10px black;
+}
+.social-links i{
+    font-size: 30px;
+    padding:7px;
+}
+.social-links i:hover, .social-links a:hover{
+    color: rgb(121, 206, 245);
+    transition: transform 0.3s ease-in;
+    transform: scale(1.2);
+}
+
+

@@ -1,0 +1,336 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart_checkout" />
+</head>
+<body>
+ <header class="flex">
+    <h1 class="text-3xl indent-5">Gracious Food Services</h1>
+    <div class="ml-26">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" class="p-3.5 w-85 h-3.5 bg-white border-3 rounded-xl" 
+          placeholder="ENTER SERVICE NAME OR FOOD ITEM">
+    </div>
+    
+    <nav>
+        <ul>
+            <li><a href="#home" class="border-r-3">HOME</a></li>
+            <li><a href="#about" class="border-r-3" >ABOUT US</a></li>
+            <li><a href="#shop" class="border-r-3">SHOP</a></li>
+            <li><a href="#help">HELP</a></li>
+        </ul>
+    </nav>
+
+   <div class="flex ml-27">
+    <span class="material-symbols-outlined">
+        shopping_cart_checkout
+        </span>
+    <p class="text-xl pl-2">YOUR CART</p>
+   </div>
+</header>
+
+    <div class="container px-35 pt-30">
+
+        <h1 class="text-6xl">INDULGE IN GLOBAL CUISINES</h1>
+        <img src="images/image1.png" alt="A dish with rice and meat" class="mt-4.5 shadow-lg shadow-blue-500/30">
+
+        <div class="flex  gap-10 mt-3">
+            <span>
+                <p class="text-base mt-3.5 font-medium w-220">
+                    Experience a world of culinary excellence with Gracious Food Catering Services. 
+                    From British classics to the exotic flavors of Thai cuisine, we cater to all your gastronomic desires.</p>
+            </span>
+             <span>
+                <button class="bg-emerald-800  px-15 p-3 m-5 text-xl text-white font-medium rounded-4xl
+                 border-emerald-950 hover:bg-lime-600 ">Order Now !</button>
+             </span>
+        </div>   
+    </div>
+    <!-- -----------------------Services & products----------------------- -->
+
+    <div class="services-container grid grid-cols-3 px-18 mt-12 gap-3.5">
+        <div class="container-two">
+            <img class="mySlides slide-group1" src="images/image5.png" alt="Event Catering">
+            <div class="overlay">
+                <div class="text">Event Catering</div>
+                <div><button class="bg-lime-300 p-2.5 m-1 hover:bg-lime-500">BOOK NOW</button></div>
+        </div>
+        </div>
+    
+        <div class="container-two">
+            <img class="mySlides slide-group1" src="images/image_resized_2560x1707.png" alt="International Cuisine">
+            <div class="overlay"><div class="text">International Cuisine Catering</div>
+            <div><button class="bg-lime-300 p-2.5 m-1 hover:bg-lime-500">BOOK NOW</button></div></div>
+        </div>
+    
+        <div class="container-two">
+            <img class="mySlides slide-group1" src="images/image5.png" alt="Beverage Catering">
+            <div class="overlay"><div class="text">Beverage Catering</div>
+            <div><button class="bg-lime-300 p-2.5 m-1 hover:bg-lime-500">BOOK NOW</button></div></div>
+        </div>
+    
+        <div class="container-two">
+            <img class="mySlides slide-group2" src="images/image2.png" alt="Specialized Catering">
+            <div class="overlay"><div class="text">Specialized Catering</div>
+            <div><button class="bg-lime-300 p-2.5 m-1 hover:bg-lime-500">BOOK NOW</button></div></div>
+        </div>
+    
+        <div class="container-two">
+            <img class="mySlides slide-group2" src="images/image3.png" alt="Food Trucks">
+            <div class="overlay"><div class="text">Mobile Catering: Food Trucks & Vans</div>
+            <div><button class="bg-lime-300 p-2.5 m-1 hover:bg-lime-500">BOOK NOW</button></div></div>
+        </div>
+    
+        <div class="container-two">
+            <img class="mySlides slide-group2 p-1.5" src="images/image4.png" alt="Dietary Catering" >
+            <div class="overlay"><div class="text">Dietary Consideration Catering</div>
+            <div><button class="bg-lime-300 p-2.5 m-1 hover:bg-lime-500">BOOK NOW</button></div></div>
+        </div>
+    </div>
+    
+ </div>
+ <div class="slideshow-controls pt-3.5 mt-4">
+    <button class=" hover:bg-amber-200" onclick="showSlides(-1)">❮ Prev</button>
+    <button class="next-btn" onclick="showSlides(1)">Next ❯</button>
+</div>
+<!-- ------------------------------Featured Products---------------------------------- -->
+<div class="featured-products pt-20 mt-10 bg-lime-100 h-200">
+    <h1 class="text-5xl text-center">FEATURED PRODUCTS</h1>
+
+    <div class="products-images grid grid-cols-2 pt-5">
+        <!-- Slide 1 -->
+        <div class="mySlides2 shadow-md shadow-gray-600">
+            <div class="image"><a href="starters.html"><img src="images/pr1.png" style="width:100%"></a></div>
+            <div class="products">
+                <h2 class="text-3xl">Appetizers/Starters</h2>
+                <p class="">&pound;200</p>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="mySlides2 shadow-md shadow-gray-600">
+            <div class="image"><a href="maincourses.html"><img src="images/pr2.png" style="width:100%"></a></div>
+            <div class="products">
+                <h2 class="text-3xl">Main Courses</h2>
+                <p class="">&pound;500</p>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="mySlides2 shadow-md shadow-gray-600">
+            <div class="image"><a href="desserts.html"><img src="images/pr3.png" style="width:100%; height:80%;" ></a></div>
+            <div class="products">
+                <h2 class=" text-3xl">Desserts</h2>
+                <p class="">&pound;300</p>
+            </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="mySlides2 shadow-md shadow-gray-600">
+           <div class="image"><a href="beaverages.html"><img src="images/pr4.png" style="width:100%"></a> </div>
+            <div class="products">
+                <h2 class="text-3xl">Beverages</h2>
+                <p class="">&pound;400</p>
+            </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="mySlides2 shadow-md shadow-gray-600">
+            <div class="image"><a href="dietoptions.html"><img src="images/pr5.png" style="width:100%"></a></div>
+            <div class="products">
+                <h2 class=" text-3xl">Specialty Diet Options</h2>
+                <p class="">&pound;500</p>
+            </div>
+        </div>
+
+        <!-- Slide 6 -->
+        <div class="mySlides2 shadow-md shadow-gray-600">
+            <div class="image"><a href="dairy-free.html"><img src="images/pr6.png" style="width:100%"></a></div>
+            <div class="products">
+                <h2 class=" text-3xl">Dairy-Free Ice Cream</h2>
+                <p class="">&pound;200</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="nav-elements flex justify-between">
+        <button class="cursor-grab" onclick="plusDivs(-1)">&#10094;</button>
+        <button  class="cursor-grab" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+</div>
+
+<!-- ----------------------------------------News-letter section-------------------------------------------- -->
+
+<div class="px-20 pt-15 pb-5 bg-sky-50 border-3 inset-2 border-black">
+    <h1 class="text-6xl indent-3 tracking-wide">NEWS LETTER</h1>
+    <div class="news-section flex flex-col-3 gap-4">
+        <span><p class="w-190 text-xl p-4 ">Stay updated with the latest from My Gracious Catering!
+             Sign up for our newsletter to receive exclusive offers, 
+            event updates, and featured recipes straight to your inbox.</p></span>
+            <span class="mt-8"><input  class="w-96 p-2 border-2 rounded-xl bg-gray-300
+                shadow-md shadow-gray-600 text-black" type="text" placeholder="Enter Your Email Here"></span>
+            <span class="mt-8"><button class=" text-white bg-emerald-400 text-xl 
+                border-1 shadow-gray-700 shadow-md border-black rounded-2xl px-11 p-2
+                 hover:bg-lime-300 transition ease-in">SUBSCRIBE!</button></span>
+    </div>
+
+</div>
+
+<!-- -----------------------------5 images home-delivery food iteams----------------------  -->
+
+<div class="  flex gap-3 h-200 pt-15 px-5" >
+    
+    <div class="imagediv m-2"></div>
+
+    <div class="four-fooditems grid grid-cols-2 gap-3.5 p-2">
+        <div class="d1 foodimage"></div>
+
+        <div class="d2 foodimage"></div>
+
+        <div class=" food-price text-center text-lg "><h2>Halloumi & Sweet Potato Fries 🧀🍠</h2>
+        <p>£9.50</p></div>
+
+        <div class="food-price text-center text-lg"><h2>Chicken Tikka Masala 🍛</h2>
+            <p>£12.00</p></div>
+
+        <div class="d3 foodimage"></div>
+
+        <div class="d4 foodimage"></div>
+
+        <div class="food-price text-center text-lg"><h2>Burgers & Fries 🍔🍟</h2>
+            <p>£12.50</p></div>
+
+            <div class="food-price text-center text-lg"><h2>Sushi Platter 🍣</h2>
+                <p>£15.99</p></div>
+
+    </div>
+    
+</div>
+
+<!-- -------------------------------------About section------------------------------------- -->
+    <div class="text-center px-50 m-auto mt-16 border-2 border-lime-500 p-5 w-300 block
+                shadow-emerald-900 shadow-2xl ">
+
+    <h1 class="text-3xl font-medium p-3 underline underline-offset-2">ABOUT GRACIOUS CATERING SERVICES</h1>
+        <P class="text-xl leading-8">Gracious Catering Services brings you a delightful fusion of flavors, offering high-quality, 
+        freshly prepared meals for every occasion. Whether it’s a family gathering, corporate event, 
+        or a cozy dinner at home, we specialize in creating delicious dishes with the finest ingredients. 
+        With a passion for exceptional service and a commitment to culinary excellence, 
+        we ensure every bite is a memorable experience.</P>
+
+    </div>     
+
+    <!-- ---------------------------------------Social links-logo section----------------------------------- -->
+
+    <div class="flex px-20 pt-10 h-130 bg-emerald-700 text-white gap-20 mt-20">
+
+        <div class=" block w-65 text-center">
+            <div><h1 class="logo">Gracious Food Services</h1></div>
+            <p class="text-2xl leading-10 mt-5">123 Maple Street</p>
+            <p class="text-2xl leading-10">London, E1 6AN</p>
+            
+            <p class="text-2xl leading-10"> United Kingdom</p></p>
+        </div>
+
+        <div class="mt-20 text-center"><h1 class="text-4xl text-left pb-6">MAIN MENU</h1>
+        <ul class="leading-13 text-xl ">
+            <li class="list-disc ml-8"><a href="" class="hover:underline">HOME</a></li>
+            <li class="list-disc ml-8"><a href=""class="hover:underline">ABOIT US</a></li>
+            <li class="list-disc ml-8"><a href=""class="hover:underline">SHOP</a></li>
+            <li class="list-disc ml-8"><a href=""class="hover:underline">HELP</a></li>
+        </ul></div>
+
+        <div class="mt-20 text-center"><h1 class="text-4xl pb-6">COMPANY</h1>
+        <ul class="leading-14 text-xl ">
+            <li class="list-disc ml-8"><a href="" class="hover:underline">THE COMPNAY</a></li>
+            <li class="list-disc ml-8"><a href="" class="hover:underline">CAREERS</a></li>
+            <li class="list-disc ml-8"><a href="" class="hover:underline">PRESS</a></li>
+        </ul></div>
+
+        <div  class="mt-20 text-center"><h1 class="text-4xl pb-6">DICOVER</h1>
+        <ul class="leading-14 text-xl ">
+            <li  class="list-disc ml-8"><a href="" class="hover:underline">THE COMPANY</a></li>
+            <li class="list-disc ml-8"><a href="" class="hover:underline">OUR HISTORY</a></li>
+            <li class="list-disc ml-8"><a href="" class="hover:underline">BRAND MOTTO</a></li>
+        </ul></div>
+
+        <div  class="social-links mt-20 text-center">
+            <h1 class="text-4xl pb-6">FIND US ON</h1>
+            <ul class="leading-14 text-xl pb-6">
+                <li><i class="fa-brands fa-facebook"></i><a href="https://www.facebook.com/" class="">FACEBOOK</a></li>
+                <li>  <i class="fab fa-twitter"></i><a href="https://www.twitter.com/">TWITTER</a></li>
+                <li><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/">INSTAGRAM</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- -------------------------Footer section-------------------------------- -->
+     <footer class="h-15 bg-emerald-950 text-white text-center tracking-widest text-lg p-5">
+        <p>COPYRIGHTS &COPY;2025. ALL RIGHTS RESERVED GRACIOUS FOOD SERVICES</p>
+     </footer>
+
+ <!-- -------------------------JavaScript for services slides--------------------- -->
+<script>
+    let currentIndex = 1;
+    const totalSlides = 2; // Number of groups (each group has 3 images)
+
+    function showSlides(n) {
+        let groups = ["slide-group1", "slide-group2"];
+
+        if (n === 1 && currentIndex < totalSlides) {
+            currentIndex++;
+        } else if (n === -1 && currentIndex > 1) {
+            currentIndex--;
+        }
+
+        groups.forEach((group, index) => {
+            let elements = document.getElementsByClassName(group);
+            for (let i = 0; i < elements.length; i++) {
+                elements[i].style.display = (index + 1 === currentIndex) ? "block" : "none";
+            }
+        });
+    }
+
+    // Initialize the first group
+    showSlides(1); // Start with the first group
+
+    // -----------------------slides for featured products----------------------------------
+    var slideIndex2 = 0; // Start at the first pair of slides
+    var slidesToShow = 2; // Number of slides to show at once
+    showDivs1(slideIndex2);
+
+    function plusDivs(m) {
+        slideIndex2 += m * slidesToShow;
+        showDivs1(slideIndex2);
+    }
+
+    function showDivs1(n) {
+        var y = document.getElementsByClassName("mySlides2");
+        var totalSlides = y.length;
+
+        // Handle wrap-around logic
+        if (n >= totalSlides) { slideIndex2 = 0; }
+        if (n < 0) { slideIndex2 = totalSlides - slidesToShow; }
+
+        // Hide all slides
+        for (var j = 0; j < totalSlides; j++) {
+            y[j].style.display = "none";
+        }
+
+        // Show the next two slides
+        for (var k = 0; k < slidesToShow; k++) {
+            var currentIndex = (slideIndex2 + k) % totalSlides;
+            y[currentIndex].style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>

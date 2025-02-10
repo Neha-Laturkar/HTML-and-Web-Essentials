@@ -1,0 +1,36 @@
+@import "tailwindcss";
+body{
+    margin: auto;
+    max-width: 80vw;
+    background-image: url(images/bg-image.png);
+    background-position: center;
+}
+.main1-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.348), rgba(0, 0, 0, 0.66)), 
+                      url(images/hero-image2.png);
+    background-position: center;
+    background-size: cover;
+}
+.cool-image{
+    background-image: url(images/cool-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+    width: 45rem;
+}
+/* .logo{
+    border: 2px solid black;
+    padding: 2.4rem;
+   
+    font-size: 2rem;
+    font-weight: 500;
+    border-radius: 50%;
+    
+    background-color: white;
+    box-shadow: 3px 3px 15px rgb(8, 8, 8);
+} */
+
+
+/* -------------------responsiveness--------------------- */
+

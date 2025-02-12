@@ -1,0 +1,559 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- ---------------------Header section------------------------------------------------------ -->
+ <header class="flex flex-col sm:flex-row flex-wrap items-center justify-between bg-gray-700 text-white py-3 px-4">
+
+  <div class="flex items-center gap-4">
+    <img class="w-14 h-15" src="images/logo.png" alt="">
+    <h1 class="text-3xl py-2 tracking-wider">InsightHive</h1>
+  </div>
+
+  <div class="relative w-full sm:w-80 mt-3 sm:mt-0">
+    <input type="text" class="bg-gray-100 h-10 w-full text-gray-600 border-2 border-gray-800 rounded-2xl
+      focus:ring-2 focus:ring-blue-400 focus:border-blue-500" 
+     placeholder=" ">
+    <i class="fa-solid fa-magnifying-glass absolute left-3 top-5 transform -translate-y-1/2 text-gray-500"></i>
+</div>
+
+
+  <div class="flex gap-2 sm:gap-4 text-gray-500 mt-3 sm:mt-0">
+    <i class="fa-solid fa-user bg-white p-3 h-10 rounded-full hover:bg-gray-400 hover:text-white"></i>
+    <i class="fa-solid fa-envelope  bg-white p-3 h-10 rounded-full hover:bg-gray-400 hover:text-white"></i>
+    <i class="fa-solid fa-cart-shopping bg-white p-3 h-10 rounded-full hover:bg-gray-400 hover:text-white"></i>
+  </div>
+
+  <div class="flex items-center gap-3 mt-3 sm:mt-0">
+    <img class="w-12 h-12 object-cover border-2 rounded-full" src="images/profile-pic.png" alt="">
+    <p class="text-lg hidden sm:block hover:underline">NEHA SUTAR</p>
+  </div>
+ </header>
+
+ <!-- ------------------------------Main two sections------------------------------------------ -->
+  <div class=" flex flex-row h-full">
+
+    <div class=" flex flex-col w-1/4 bg-gray-700 text-gray-200"> 
+       <!--   left section inside div -->
+      <div class="flex flex-col gap-4 p-3">
+
+      <div class="flex gap-3">
+        <i class="fa-solid fa-house bg-white text-black rounded-full text-xl border-2 border-gray-400 p-1"></i>
+        <h1 class="text-lg hover:underline tracking-wider px-2">HOME</h1>
+      </div>
+
+      <div class="flex gap-3">
+        <img class="h-8 w-8 rounded-full border-2 border-gray-400" src="images/application.png" alt="">
+
+        <div class="relative inline-block">
+
+        <!-- <h1 class="text-lg hover:underline tracking-wider">APPLICATIONS</h1> -->
+        <select name="apps" id="apps" class="appearance-none text-lg bg-gray-700 px-2">
+          <option value="aaplications">APPLICATIONS</option>
+          <option value="financial">FINANCIAL REPORTS</option>
+          <option value="engagement">USER ENGAGEMENT</option>
+          <option value="sales">DASHBOARD SALES</option>
+          <option value="tasks">TASK TRACKER</option>
+      </select>
+      <i class="fa-solid fa-chevron-down absolute right-6 top-3 transform 
+         -translate-y-1/2 pointer-events-none"></i>
+      </div>
+
+      </div>
+    </div>
+
+      <div class="flex flex-col gap-5 bg-gray-300 text-black p-3 pl-15">
+
+        <div class="relative inline-block group">
+          <h1 class="text-lg hover:underline tracking-wider cursor-pointer">DATA TOOLS <i class="fa-solid fa-chevron-down pointer-events-none"></i></h1>
+          <div class="hidden absolute left-0 w-70 bg-gray-100 shadow-lg shadow-gray-700 z-10 group-hover:block">
+              <a href="#" class="block p-3 text-black hover:bg-gray-500">Link 1</a>
+              <a href="#" class="block p-3 text-black hover:bg-gray-500">Link 2</a>
+              <a href="#" class="block p-3 text-black hover:bg-gray-500">Link 3</a>
+              <a href="#" class="block p-3 text-black hover:bg-gray-500">Link 4</a>
+              <a href="#" class="block p-3 text-black hover:bg-gray-500">Link 5</a>
+         </div>
+        </div>
+
+       <p class="text-[13px] font-semibold hover:underline tracking-wider">ANALYSIS TOOLS</p>
+        <p class="text-[13px] font-semibold hover:underline tracking-wider" >DATA REPORTS</p>
+        <p class="text-[13px] font-semibold hover:underline tracking-wider">ANALYSIS TOOLS</p>
+        <p class="text-[13px] font-semibold hover:underline tracking-wider" >EMAILER TOOLS</p>
+        <p class="text-[13px] font-semibold hover:underline tracking-wider">IMPORT DESIGNS</p>
+        <p class="text-[13px] font-semibold hover:underline tracking-wider">PREVIOUS REPORTS</p>
+        <p class="text-[13px] font-semibold hover:underline tracking-wider">WEB CAPABILITIES</p>
+      </div>
+
+      <div class="flex flex-col gap-4 p-3 bg-gray-300 text-black pl-4">
+
+      <div class="flex gap-3">
+        <img class="h-8 w-8 rounded-full border-1 border-black bg-white" src="images/archive.png" alt="">
+
+        <div class="relative inline-block group">
+          <div class="flex gap-3">
+          <h1 class="text-lg tracking-wider">ARCHIVES</h1><i class="fa-solid fa-chevron-down pointer-events-none text-xl"></i></div>
+          <div class="hidden absolute left-0 w-70 bg-gray-100 shadow-lg shadow-gray-700 z-10 group-hover:block">
+            <a href="#" class="block p-3 text-black hover:bg-gray-500">Link 1</a>
+            <a href="#" class="block p-3 text-black hover:bg-gray-500">Link 2</a>
+            <a href="#" class="block p-3 text-black hover:bg-gray-500">Link 3</a>
+            <a href="#" class="block p-3 text-black hover:bg-gray-500">Link 4</a>
+            <a href="#" class="block p-3 text-black hover:bg-gray-500">Link 5</a>
+          </div>
+        </div>
+     </div>
+
+     <div class="flex gap-3">
+      <img class="h-8 w-8 rounded-full border-1 border-black bg-white" src="images/DASHBOARD.png" alt="">
+
+      <div class="relative inline-block group">
+        <div class="flex gap-3">
+        <h1 class="text-lg tracking-wider">DASHBOARD</h1><i class="fa-solid fa-chevron-down pointer-events-none text-xl"></i></div>
+        <div class="hidden absolute left-0 w-70 bg-gray-100 shadow-lg shadow-gray-700 z-10 group-hover:block">
+          <a href="#" class="block p-3 text-black hover:bg-gray-500">Link 1</a>
+          <a href="#" class="block p-3 text-black hover:bg-gray-500">Link 2</a>
+          <a href="#" class="block p-3 text-black hover:bg-gray-500">Link 3</a>
+          <a href="#" class="block p-3 text-black hover:bg-gray-500">Link 4</a>
+          <a href="#" class="block p-3 text-black hover:bg-gray-500">Link 5</a>
+        </div>
+      </div>
+   </div>
+
+   <div class="flex gap-3">
+    <img class="h-8 w-8 rounded-full border-1 border-black bg-white" src="images/PLUGINS.png" alt="">
+
+    <div class="relative inline-block group">
+      <div class="flex gap-3">
+      <h1 class="text-lg tracking-wider">PLUGINS</h1><i class="fa-solid fa-chevron-down pointer-events-none text-xl"></i></div>
+      <div class="hidden absolute left-0 w-70 bg-gray-100 shadow-lg shadow-gray-700 z-10 group-hover:block">
+        <a href="#" class="block p-3 text-black hover:bg-gray-500">Link 1</a>
+        <a href="#" class="block p-3 text-black hover:bg-gray-500">Link 2</a>
+        <a href="#" class="block p-3 text-black hover:bg-gray-500">Link 3</a>
+        <a href="#" class="block p-3 text-black hover:bg-gray-500">Link 4</a>
+        <a href="#" class="block p-3 text-black hover:bg-gray-500">Link 5</a>
+      </div>
+    </div>
+ </div>
+
+ <div class="flex gap-3">
+  <img class="h-8 w-8 rounded-full border-1 border-black bg-white" src="images/preferences.png" alt="">
+
+  <div class="relative inline-block group">
+    <div class="flex gap-3">
+    <h1 class="text-lg tracking-wider">PREFERENCES</h1><i class="fa-solid fa-chevron-down pointer-events-none text-xl"></i></div>
+    <div class="hidden absolute left-0 w-70 bg-gray-100 shadow-lg shadow-gray-700 z-10 group-hover:block">
+      <a href="#" class="block p-3 text-black hover:bg-gray-500">Link 1</a>
+      <a href="#" class="block p-3 text-black hover:bg-gray-500">Link 2</a>
+      <a href="#" class="block p-3 text-black hover:bg-gray-500">Link 3</a>
+      <a href="#" class="block p-3 text-black hover:bg-gray-500">Link 4</a>
+      <a href="#" class="block p-3 text-black hover:bg-gray-500">Link 5</a>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+  </div>
+   
+  
+
+ <!-- --------------------------------------Welcome User section------------------------------------------- -->
+  <!-- ----------------------------------------------------------------------------------------------------- -->
+
+  <div class=" h-160 bg-gray-100 relative overflow-scroll border-2 p-2 px-3 w-310 grid grid-cols-5 gap-4">
+
+    <!-- ----------------Welcome user ------------------------------------------------------ -->
+    <div class=" welcome-user bg-gray-800 text-gray-300 col-start-1 col-end-6 h-20 p-3">
+      <img class="h-13 w-13 rounded-full float-left mx-1" src="images/welcome-user.png" alt="">
+      <h1 class="text-xl">WELCOME USER</h1>
+      <p class="text-[13px] hover:underline">ADMIN, INSIGHTHIVE, UK</p>
+    </div>
+
+     <!-- --------------------------Main-image-----------------------------------------------  -->
+
+      <div class="main-image col-start-1 col-end-4 row-start-2 relative w-full">
+
+        <img class="mySlides h-90 w-full shadow-sm shadow-gray-600" src="images/main-image.png" alt="">
+        <img class="mySlides hidden h-90 w-full shadow-sm shadow-gray-600" src="images/hero-image2.png" alt="">
+        <img class=" mySlides hidden h-90 w-full shadow-sm shadow-gray-600" src="images/hero-image3.png" alt="">
+        <img class="mySlides hidden h-90 w-full shadow-sm shadow-gray-600" src="images/hero-image4.png" alt="">
+        <img class="mySlides hidden h-90 w-full shadow-sm shadow-gray-600" src="images/hero-image5.png" alt="">
+        <!-- Left Button -->
+        <button class="absolute top-1/2 left-3 transform -translate-y-1/2 text-gray-300 p-1 text-4xl bg-black" 
+          onclick="plusDivs(-1)">&#10094;</button>
+
+      <!-- Right Button -->
+        <button class="absolute top-1/2 right-3 transform -translate-y-1/2 text-gray-300 p-1 text-4xl bg-black " 
+         onclick="plusDivs(1)">&#10095;</button>
+
+      </div>
+
+      <!-- ------------------------Sub-sections------------------------------------------------ -->
+
+      <!-- -------------------------Chats------------------------------------------------------ -->
+
+      <div class="my-chats col-start-4 col-end-6 row-start-2 row-end-7
+                  flex flex-col gap-4 p-0 text-gray-200 border-1 border-gray-600 shadow-sm shadow-gray-600">
+
+          <div class="chats p-2 gap-2 bg-gray-800 shadow-lg shadow-gray-400 h-100 overflow-scroll">
+
+          <h1 class="text-xl">MY CHATS</h1>
+          <hr class="py-1">
+          
+
+          <div class="chat flex justify-between bg-gray-200 text-gray-700 col-start-1 col-end-6 h-15 p-2 hover:bg-white">
+
+            <div class="flex gap-2">
+              <img class="h-10 w-10 rounded-full boreder-1" src="images/stacy.png" alt="">
+              <div>
+                <h1 class="text-sm font-semibold">STACY</h1>
+                <p class="text-[13px]">Did you get it right!</p>
+              </div>
+            </div>
+              <button class="rounded-2xl border-2 h-8 px-4 bg-blue-200 hover:bg-blue-400">ADMIN</button>
+          </div>
+
+          <div class="chat flex justify-between bg-gray-200 text-gray-700 col-start-1 col-end-6 h-17 p-2  hover:bg-white">
+
+            <div class="flex gap-2">
+              <img class="h-10 w-10 rounded-full border-1" src="images/mathew.png" alt="">
+              <div>
+                <h1 class="text-sm font-semibold">MATHEEW</h1>
+                <p class="text-[13px]">I have sent you the updates.</p>
+              </div>
+            </div>
+              <button class="rounded-2xl border-2 h-8 px-4 bg-blue-200 hover:bg-blue-400">ADMIN</button>
+          </div>
+
+          <div class="chat flex justify-between bg-gray-200 text-gray-700 col-start-1 col-end-6 h-17 p-2  hover:bg-white">
+
+            <div class="flex gap-2">
+              <img class="h-10 w-10 rounded-full border-1" src="images/chat3.png" alt="">
+              <div>
+                <h1 class="text-sm font-semibold">SIMON</h1>
+                <p class="text-[13px]">Need support team to meet.</p>
+              </div>
+            </div>
+              <button class="rounded-2xl border-2 h-8 px-4 bg-blue-200 hover:bg-blue-400">JOIN</button>
+          </div>
+
+          <div class="chat flex justify-between bg-gray-200 text-gray-700 col-start-1 col-end-6 h-17 p-2 hover:bg-white">
+
+            <div class="flex gap-2">
+              <img class="h-10 w-10 rounded-full border-1" src="images/chat4.png" alt="">
+              <div>
+                <h1 class="text-sm font-semibold">ANTHONY</h1>
+                <p class="text-[13px]">Great work team.</p>
+              </div>
+            </div>
+              <button class="rounded-2xl border-2 h-8 px-4 bg-blue-200 hover:bg-blue-400">JOIN</button>
+          </div>
+
+          <div class="chat flex justify-between bg-gray-200 text-gray-700 col-start-1 col-end-6 h-17 p-2 hover:bg-white">
+
+            <div class="flex gap-2">
+              <img class="h-10 w-10 rounded-full border-1" src="images/chat5.png" alt="">
+              <div>
+                <h1 class="text-sm font-semibold">LINDO</h1>
+                <p class="text-[13px]">Please Update the code.</p>
+              </div>
+            </div>
+              <button class="rounded-2xl border-2 h-8 px-4 bg-blue-200 hover:bg-blue-400">JOIN</button>
+          </div>
+
+          <div class="chat flex justify-between bg-gray-200 text-gray-700 col-start-1 col-end-6 h-17 p-2 hover:bg-white">
+
+            <div class="flex gap-2">
+              <img class="h-10 w-10 rounded-full border-1" src="images/mathew.png" alt="">
+              <div>
+                <h1 class="text-sm font-semibold">ROXANNE</h1>
+                <p class="text-[13px]">Thank You for your help.</p>
+              </div>
+            </div>
+              <button class="rounded-2xl border-2 h-8 px-4 bg-blue-200 hover:bg-blue-400">JOIN</button>
+          </div>
+
+          <div class="chat flex justify-between bg-gray-200 text-gray-700 col-start-1 col-end-6 h-17 p-2  hover:bg-white">
+
+            <div class="flex gap-2">
+              <img class="h-10 w-10 rounded-full border-1" src="images/chat3.png" alt="">
+              <div>
+                <h1 class="text-sm font-semibold">SIMON</h1>
+                <p class="text-[13px]">Need support team to meet.</p>
+              </div>
+            </div>
+              <button class="rounded-2xl border-2 h-8 px-4 bg-blue-200 hover:bg-blue-400">JOIN</button>
+          </div>
+
+          <div class="chat flex justify-between bg-gray-200 text-gray-700 col-start-1 col-end-6 h-17 p-2 hover:bg-white">
+
+            <div class="flex gap-2">
+              <img class="h-10 w-10 rounded-full border-1" src="images/chat4.png" alt="">
+              <div>
+                <h1 class="text-sm font-semibold">ANTHONY</h1>
+                <p class="text-[13px]">Great work team.</p>
+              </div>
+            </div>
+              <button class="rounded-2xl border-2 h-8 px-4 bg-blue-200 hover:bg-blue-400">JOIN</button>
+          </div>
+
+          <div class="chat flex justify-between bg-gray-200 text-gray-700 col-start-1 col-end-6 h-17 p-2 hover:bg-white">
+
+            <div class="flex gap-2">
+              <img class="h-10 w-10 rounded-full border-1" src="images/chat5.png" alt="">
+              <div>
+                <h1 class="text-sm font-semibold">LINDO</h1>
+                <p class="text-[13px]">Please Update the code.</p>
+              </div>
+            </div>
+              <button class="rounded-2xl border-2 h-8 px-4 bg-blue-200 hover:bg-blue-400">JOIN</button>
+          </div>
+
+          <div class="chat flex justify-between bg-gray-200 text-gray-700 col-start-1 col-end-6 h-17 p-2 hover:bg-white">
+
+            <div class="flex gap-2">
+              <img class="h-10 w-10 rounded-full border-1" src="images/mathew.png" alt="">
+              <div>
+                <h1 class="text-sm font-semibold">ROXANNE</h1>
+                <p class="text-[13px]">Thank You for your help.</p>
+              </div>
+            </div>
+              <button class="rounded-2xl border-2 h-8 px-4 bg-blue-200 hover:bg-blue-400">JOIN</button>
+          </div>
+
+          </div>
+             <!-- ------------------------------TO DO LIst----------------------------------- -->
+
+          <div class="todo-list border-2 p-2 h-110 overflow-scroll bg-gray-800 shadow-lg shadow-gray-500 ">
+            <div class="flex justify-between text-xl text-gray-200">
+              <h1>MY TO DO LIST</h1>
+              <i class="fa-solid fa-list hover:text-blue-500 "></i>
+            </div>
+            <hr>
+            <div class="flex flex-col items-center pt-30 gap-6 text-center bg-gray-200 text-gray-600 border-1">
+              <i class="fa-solid fa-check text-6xl bg-white text-black rounded-full border-2 p-4 
+              transition-transform duration-300 hover:scale-120 hover:bg-blue-300"></i>
+              <p class="text-xl font-bold">MY TO-DO LIST</p>
+              <p class="text-[14px] p-2">YOU ARE CURRENTLY UPTO DATE WITH YOUR TASKS</p>
+
+            </div>
+            
+            </div>
+
+            <!-- ------------------------------TOP RATED APPLICATIONS---------------------------------- -->
+            <div class="toprated-apps border-2 p-2 h-200 overflow-scroll bg-gray-800 shadow-lg shadow-gray-500" >
+              <h1 class="text-xl">TOP RATED APPLICATIONS</h1>
+              <hr>
+              <div class="bg-gray-300 text-gray-800 flex flex-col gap-5 overflow-scroll p-4">
+               <h1 class="hover:underline hover:font-bold"> 1️⃣ Insight Reports</h1>
+                <p>📊 Gain real-time analytics & data insights to make informed business decisions with AI-powered reports.</p>
+
+               <h1 class="hover:underline hover:font-bold"> 2️⃣ TaskFlow Manager</h1>
+                <p>✅ Optimize team collaboration with an advanced project management system designed for seamless workflow automation.</p>
+
+               <h1 class="hover:underline hover:font-bold"> 3️⃣ SecureVault Access</h1>
+              <p>🔐 Enterprise-grade security & authentication system ensuring safe data access and compliance with industry standards.</p>
+              <h1 class="hover:underline hover:font-bold"> 1️⃣ Insight Reports</h1>
+                <p>📊 Gain real-time analytics & data insights to make informed business decisions with AI-powered reports.</p>
+
+               <h1 class="hover:underline hover:font-bold"> 2️⃣ TaskFlow Manager</h1>
+                <p>✅ Optimize team collaboration with an advanced project management system designed for seamless workflow automation.</p>
+
+               <h1 class="hover:underline hover:font-bold"> 3️⃣ SecureVault Access</h1>
+              <p>🔐 Enterprise-grade security & authentication system ensuring safe data access and compliance with industry standards.</p>
+              <h1 class="hover:underline hover:font-bold"> 1️⃣ Insight Reports</h1>
+                <p>📊 Gain real-time analytics & data insights to make informed business decisions with AI-powered reports.</p>
+
+               <h1 class="hover:underline hover:font-bold"> 2️⃣ TaskFlow Manager</h1>
+                <p>✅ Optimize team collaboration with an advanced project management system designed for seamless workflow automation.</p>
+
+               <h1 class="hover:underline hover:font-bold"> 3️⃣ SecureVault Access</h1>
+              <p>🔐 Enterprise-grade security & authentication system ensuring safe data access and compliance with industry standards.</p>
+              <h1 class="hover:underline hover:font-bold"> 1️⃣ Insight Reports</h1>
+                <p>📊 Gain real-time analytics & data insights to make informed business decisions with AI-powered reports.</p>
+
+               <h1 class="hover:underline hover:font-bold"> 2️⃣ TaskFlow Manager</h1>
+                <p>✅ Optimize team collaboration with an advanced project management system designed for seamless workflow automation.</p>
+
+               <h1 class="hover:underline hover:font-bold"> 3️⃣ SecureVault Access</h1>
+              <p>🔐 Enterprise-grade security & authentication system ensuring safe data access and compliance with industry standards.</p>
+              </div>
+              </div> 
+ </div>
+
+<!-- ----------------Sub divs starts here-------------------------------------------------- -->
+
+      <div class="sub-div bg-blue-100 text-gray-700 border-1 border-gray-500 shadow-sm shadow-gray-800 p-2 flex flex-col items-center text-center hover:transform
+                  hover:scale-105 duration-300 ease-linear hover:rounded-xl  hover:bg-white overflow-auto ">
+        <i class="fa-solid fa-star float-right text-sm bg-white rounded-full p-1 border-1"></i>
+        <div class="mt-10">
+          <img class="h-17 w-23 mx-auto block border-2" src="images/insight-reports.png" alt="">
+          <h1 class="text-xl p-3">REPORTS</h1>
+          <p class="text-[13px] py-2">Gain real-time analytics & data insights to make 
+             decisions with AI-powered reports.</p>
+          <button class="p-3 w-full bg-blue-400 border-1 border-black text-white hover:bg-blue-500">READ DETAILS</button>
+        </div>
+      </div>
+
+      <div class="sub-div bg-blue-100 text-gray-700  border-1 border-gray-500 shadow-sm shadow-gray-800 p-2 flex flex-col items-center text-center hover:transform
+                  hover:scale-105 duration-300 ease-linear hover:rounded-xl hover:bg-white overflow-auto">
+        <i class="fa-solid fa-star float-right text-sm bg-white rounded-full p-1 border-1"></i>
+        <div class="mt-10">
+          <img class="h-17 w-23 mx-auto block border-2" src="images/taskflow-manager.png" alt="">
+          <h1 class="text-xl p-3">TASKFLOW </h1>
+          <p class="text-[13px] py-2">Optimize team collaboration with project management system 
+            seamless workflow automation.</p>
+          <button class="p-3 w-full bg-blue-400 border-1 border-black text-white hover:bg-blue-500">READ DETAILS</button>
+        </div>
+      </div>
+
+      <div class="sub-div bg-blue-100 text-gray-700 border-1 border-gray-500 shadow-sm shadow-gray-800 p-2 flex flex-col items-center text-center hover:transform
+                  hover:scale-105 duration-300 ease-linear hover:rounded-xl hover:bg-white overflow-auto">
+        <i class="fa-solid fa-star float-right text-sm bg-white rounded-full p-1 border-1"></i>
+        <div class="mt-10">
+          <img class="h-17 w-23 mx-auto block border-2" src="images/vault-access.png" alt="">
+          <h1 class="text-xl p-3">VAULT ACCESS </h1>
+          <p class="text-[13px] py-2">Enterprise-grade security & authentication system  safe 
+            data access and compliance.</p>
+          <button class="p-3 w-full bg-blue-400 border-1 border-black text-white hover:bg-blue-500">READ DETAILS</button>
+        </div>
+      </div>
+
+      <div class="sub-div bg-blue-100 text-gray-700 border-1 border-gray-500 shadow-sm shadow-gray-800 p-2 flex flex-col items-center text-center hover:transform
+                  hover:scale-105 duration-300 ease-linear hover:rounded-xl hover:bg-white overflow-auto">
+        <i class="fa-solid fa-star float-right text-sm bg-white rounded-full p-1 border-1"></i>
+        <div class="mt-10">
+          <img class="h-17 w-23 mx-auto block border-2" src="images/vault-access.png" alt="">
+          <h1 class="text-xl p-3">VAULT ACCESS </h1>
+          <p class="text-[13px] py-2">Enterprise-grade security & authentication system ensuring safe 
+            data access and compliance.</p>
+          <button class="p-3 w-full bg-blue-400 border-1 border-black text-white hover:bg-blue-500">READ DETAILS</button>
+        </div>
+      </div>
+
+      <div class="sub-div bg-blue-100 text-gray-700  border-1 border-gray-500 shadow-sm shadow-gray-800 p-2 flex flex-col items-center text-center hover:transform
+                  hover:scale-105 duration-300 ease-linear hover:rounded-xl hover:bg-white overflow-auto">
+        <i class="fa-solid fa-star float-right text-sm bg-white rounded-full p-1 border-1"></i>
+        <div class="mt-10">
+          <img class="h-17 w-23 mx-auto block border-2" src="images/taskflow-manager.png" alt="">
+          <h1 class="text-xl p-3">TASKFLOW </h1>
+          <p class="text-[13px] py-2">Optimize team collaboration with project management system 
+            seamless workflow automation.</p>
+          <button class="p-3 w-full bg-blue-400 border-1 border-black text-white hover:bg-blue-500">READ DETAILS</button>
+        </div>
+      </div>
+
+     
+      <div class="sub-div bg-blue-100 text-gray-700 border-1 border-gray-500 shadow-sm shadow-gray-800 p-2 flex flex-col items-center text-center hover:transform
+                  hover:scale-105 duration-300 ease-linear hover:rounded-xl  hover:bg-white overflow-auto">
+        <i class="fa-solid fa-star float-right text-sm bg-white rounded-full p-1 border-1"></i>
+        <div class="mt-10">
+          <img class="h-17 w-23 mx-auto block border-2" src="images/insight-reports.png" alt="">
+          <h1 class="text-xl p-3">INSIGHT REPORTS</h1>
+          <p class="text-[13px] py-2">Gain real-time analytics & data insights to make informed business decisions with AI-powered reports.</p>
+          <button class="p-3 w-full bg-blue-400 border-1 border-black text-white hover:bg-blue-500">READ DETAILS</button>
+        </div>
+      </div>
+
+      <div class="sub-div bg-blue-100 text-gray-700 border-1 border-gray-500 shadow-sm shadow-gray-800 p-2 flex flex-col items-center text-center hover:transform
+                  hover:scale-105 duration-300 ease-linear hover:rounded-xl  hover:bg-white overflow-auto">
+        <i class="fa-solid fa-star float-right text-sm bg-white rounded-full p-1 border-1"></i>
+        <div class="mt-10">
+          <img class="h-17 w-23 mx-auto block border-2" src="images/insight-reports.png" alt="">
+          <h1 class="text-xl p-3">INSIGHT REPORTS</h1>
+          <p class="text-[13px] py-2">Gain real-time analytics & data insights to make informed business decisions with AI-powered reports.</p>
+          <button class="p-3 w-full bg-blue-400 border-1 border-black text-white hover:bg-blue-500">READ DETAILS</button>
+        </div>
+      </div>
+
+      <div class="sub-div bg-blue-100 text-gray-700 border-1 border-gray-500 shadow-sm shadow-gray-800 p-2 flex flex-col items-center text-center hover:transform
+                  hover:scale-105 duration-300 ease-linear hover:rounded-xl hover:bg-white overflow-auto">
+        <i class="fa-solid fa-star float-right text-sm bg-white rounded-full p-1 border-1"></i>
+        <div class="mt-10">
+          <img class="h-17 w-23 mx-auto block border-2" src="images/taskflow-manager.png" alt="">
+          <h1 class="text-xl p-3">TASKFLOW </h1>
+          <p class="text-[13px] py-2">Optimize team collaboration with project management system 
+            seamless workflow automation.</p>
+          <button class="p-3 w-full bg-blue-400 border-1 border-black text-white hover:bg-blue-500">READ DETAILS</button>
+        </div>
+      </div>
+
+      <div class="sub-div bg-blue-100 text-gray-700 border-1 border-gray-500 shadow-sm shadow-gray-800 p-2 flex flex-col items-center text-center hover:transform
+                  hover:scale-105 duration-300 ease-linear hover:rounded-xl hover:bg-white overflow-auto">
+        <i class="fa-solid fa-star float-right text-sm bg-white rounded-full p-1 border-1"></i>
+        <div class="mt-10">
+          <img class="h-17 w-23 mx-auto block border-2" src="images/vault-access.png" alt="">
+          <h1 class="text-xl p-3">VAULT ACCESS </h1>
+          <p class="text-[13px] py-2">Enterprise-grade security & authentication system ensuring safe 
+            data access and compliance.</p>
+          <button class="p-3 w-full bg-blue-400 border-1 border-black text-white hover:bg-blue-500">READ DETAILS</button>
+        </div>
+      </div>
+
+      <div class="sub-div bg-blue-100 text-gray-700 border-1 border-gray-500 shadow-sm shadow-gray-800 p-2 flex flex-col items-center text-center hover:transform
+                  hover:scale-105 duration-300 ease-linear hover:rounded-xl hover:bg-white overflow-auto">
+        <i class="fa-solid fa-star float-right text-sm bg-white rounded-full p-1 border-1"></i>
+        <div class="mt-10">
+          <img class="h-17 w-23 mx-auto block border-2" src="images/vault-access.png" alt="">
+          <h1 class="text-xl p-3">VAULT ACCESS </h1>
+          <p class="text-[13px] py-2">Enterprise-grade security & authentication system ensuring safe 
+            data access and compliance.</p>
+          <button class="p-3 w-full bg-blue-400 border-1 border-black text-white hover:bg-blue-500">READ DETAILS</button>
+        </div>
+      </div>
+
+      <div class="sub-div bg-blue-100 text-gray-700  border-1 border-gray-500 shadow-sm shadow-gray-800 p-2 flex flex-col items-center text-center hover:transform
+                  hover:scale-105 duration-300 ease-linear hover:rounded-xl hover:bg-white overflow-auto">
+        <i class="fa-solid fa-star float-right text-sm bg-white rounded-full p-1 border-1"></i>
+        <div class="mt-10">
+          <img class="h-17 w-23 mx-auto block border-2" src="images/taskflow-manager.png" alt="">
+          <h1 class="text-xl p-3">TASKFLOW </h1>
+          <p class="text-[13px] py-2">Optimize team collaboration with project management system 
+            seamless workflow automation.</p>
+          <button class="p-3 w-full bg-blue-400 border-1 border-black text-white hover:bg-blue-500">READ DETAILS</button>
+        </div>
+      </div>
+
+     
+      <div class="sub-div bg-blue-100 text-gray-700 border-1 border-gray-500 shadow-sm shadow-gray-800 p-2 flex flex-col items-center text-center hover:transform
+                  hover:scale-105 duration-300 ease-linear hover:rounded-xl  hover:bg-white overflow-auto">
+        <i class="fa-solid fa-star float-right text-sm bg-white rounded-full p-1 border-1"></i>
+        <div class="mt-10">
+          <img class="h-17 w-23 mx-auto block border-2" src="images/insight-reports.png" alt="">
+          <h1 class="text-xl p-3">INSIGHT REPORTS</h1>
+          <p class="text-[13px] py-2">Gain real-time analytics & data insights to make informed business decisions with AI-powered reports.</p>
+          <button class="p-3 w-full bg-blue-400 border-1 border-black text-white hover:bg-blue-500">READ DETAILS</button>
+        </div>
+      </div>
+
+
+  </div>
+
+ </div> <!-- main section ends here -->
+
+ <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  </script>
+
+</body>
+</html>
